@@ -1,9 +1,10 @@
-function Aside() {
+import styles from "./Aside.module.css";
+function Aside({ asideNumber, src, asideName }) {
   return (
-    <aside>
-      <span></span>
-      <img src="" alt="" />
-      <h2></h2>
+    <aside className={styles.aside}>
+      <span className={styles.asideNumber}>{asideNumber}</span>
+      <img className={styles.asideImage} src={src} alt="MiloClubChair" />
+      <span className={styles.asideName}>{asideName}</span>
     </aside>
   );
 }

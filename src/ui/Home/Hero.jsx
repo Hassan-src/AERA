@@ -1,8 +1,22 @@
 import styles from "./Hero.module.css";
+
 import heroImage from "../../assets/Compact2-seater-Transparent.avif";
+import asideImage from "../../assets/MiloClub-Transparent.avif";
+
 function Hero() {
   return (
     <div className={styles.hero}>
+      <div className={styles.aside}>
+        <span className={styles.asideNumber}>01</span>
+        <div className={styles.asideImageBox}>
+          <img
+            className={styles.asideImage}
+            src={asideImage}
+            alt="MiloClubChair"
+          />
+        </div>
+        <span className={styles.asideName}>milo club</span>
+      </div>
       <div className={styles.textSide}>
         <span className={styles.luxuryText}>Luxury</span>
         <h1 className={styles.heroHeader}>furniture</h1>

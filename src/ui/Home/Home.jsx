@@ -1,12 +1,16 @@
 import Hero from "./Hero";
+import StoreSection from "./StoreSection";
+
 import styles from "./Home.module.css";
-import mainBackImage from "../../assets/MainBackground.avif";
+
 function Home() {
   return (
-    <div className={styles.home}>
-      <Hero />
-      <section></section>
-      <section></section>
+    <div className={styles.main}>
+      <div className={styles.home}>
+        <Hero />
+        <StoreSection />
+        <section></section>
+      </div>
     </div>
   );
 }

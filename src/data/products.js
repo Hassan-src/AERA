@@ -1,7 +1,8 @@
 export const products = [
   {
     id: 1,
-    name: "Grand Chesterfield",
+    name: "Windsor",
+    type: "Grand Chesterfield",
     category: "Sofa",
     price: 889,
     description:
@@ -15,7 +16,8 @@ export const products = [
   },
   {
     id: 2,
-    name: "Compact 2-seater",
+    name: "Haven",
+    type: "Compact 2-seater",
     category: "Sofa",
     price: 520,
     description:
@@ -29,7 +31,8 @@ export const products = [
   },
   {
     id: 3,
-    name: "Versatile sectional",
+    name: "Aria",
+    type: "Versatile sectional",
     category: "Sofa",
     price: 699,
     description:
@@ -43,7 +46,8 @@ export const products = [
   },
   {
     id: 4,
-    name: "Spacious corner",
+    name: "Belmont",
+    type: "Spacious corner",
     category: "Sofa",
     price: 1142,
     description:
@@ -57,7 +61,8 @@ export const products = [
   },
   {
     id: 5,
-    name: "Stylish chaise lounge",
+    name: "Elise",
+    type: "Chaise lounge",
     category: "Sofa",
     price: 959,
     description:
@@ -71,7 +76,8 @@ export const products = [
   },
   {
     id: 6,
-    name: "Relaxing recliner",
+    name: "Oslo",
+    type: "Relaxing recliner",
     category: "Sofa",
     price: 355,
     description:
@@ -85,7 +91,8 @@ export const products = [
   },
   {
     id: 7,
-    name: "Contemporary square arm",
+    name: "Mercer",
+    type: "Contemporary square arm",
     category: "Sofa",
     price: 1099,
     description:
@@ -99,7 +106,8 @@ export const products = [
   },
   {
     id: 8,
-    name: "Timeless mid-century",
+    name: "Rowan",
+    type: "Timeless mid-century",
     category: "Sofa",
     price: 1458,
     description:
@@ -113,7 +121,8 @@ export const products = [
   },
   {
     id: 9,
-    name: "Elegant high-back",
+    name: "Laurent",
+    type: "Elegant high-back",
     category: "Sofa",
     price: 659,
     description:
@@ -127,7 +136,8 @@ export const products = [
   },
   {
     id: 10,
-    name: "Modern wedge arm",
+    name: "Vero",
+    type: "Modern wedge arm",
     category: "Sofa",
     price: 1599,
     description:
@@ -141,7 +151,8 @@ export const products = [
   },
   {
     id: 11,
-    name: "Womb Chair",
+    name: "Luna",
+    type: "Womb Chair",
     category: "Chair",
     price: 299,
     description:
@@ -155,7 +166,8 @@ export const products = [
   },
   {
     id: 12,
-    name: "Adirondack",
+    name: "Aspen",
+    type: "Adirondack",
     category: "Chair",
     price: 420,
     description:
@@ -170,6 +182,7 @@ export const products = [
   {
     id: 13,
     name: "Barcelona",
+    type: "Barcelona",
     category: "Chair",
     price: 699,
     description:
@@ -183,7 +196,8 @@ export const products = [
   },
   {
     id: 14,
-    name: "Bentwood",
+    name: "Thonet",
+    type: "Bentwood",
     category: "Chair",
     price: 566,
     description:
@@ -197,7 +211,8 @@ export const products = [
   },
   {
     id: 15,
-    name: "Bergère",
+    name: "Élan",
+    type: "Bergère",
     category: "Chair",
     price: 789,
     description:
@@ -211,7 +226,8 @@ export const products = [
   },
   {
     id: 16,
-    name: "Cantilever",
+    name: "Axis",
+    type: "Cantilever",
     category: "Chair",
     price: 335,
     description:
@@ -225,7 +241,8 @@ export const products = [
   },
   {
     id: 17,
-    name: "Tulip",
+    name: "Alba",
+    type: "Tulip",
     category: "Chair",
     price: 899,
     description:
@@ -239,7 +256,8 @@ export const products = [
   },
   {
     id: 18,
-    name: "Wing back",
+    name: "Windsor",
+    type: "Wing back",
     category: "Chair",
     price: 822,
     description:
@@ -254,6 +272,7 @@ export const products = [
   {
     id: 19,
     name: "Milo Club",
+    type: "Milo Club",
     category: "Chair",
     price: 226,
     description:
@@ -267,7 +286,8 @@ export const products = [
   },
   {
     id: 20,
-    name: "Eames Lounge",
+    name: "Palmer",
+    type: "Eames Lounge",
     category: "Chair",
     price: 347,
     description:
@@ -281,7 +301,8 @@ export const products = [
   },
   {
     id: 21,
-    name: "Arco Coffee Table",
+    name: "Arco",
+    type: "Arco Coffee Table",
     category: "Table",
     price: 347,
     description:
@@ -295,7 +316,8 @@ export const products = [
   },
   {
     id: 22,
-    name: "End & Side",
+    name: "Cove",
+    type: "End & Side",
     category: "Table",
     price: 209,
     description:
@@ -304,7 +326,8 @@ export const products = [
   },
   {
     id: 23,
-    name: "Office Desks",
+    name: "Forma",
+    type: "Office Desks",
     category: "Table",
     price: 599,
     description:
@@ -318,7 +341,8 @@ export const products = [
   },
   {
     id: 24,
-    name: "Forma Console Table",
+    name: "Atelier",
+    type: "Forma Console Table",
     category: "Table",
     price: 332,
     description:
@@ -332,7 +356,8 @@ export const products = [
   },
   {
     id: 25,
-    name: "Bedside & Nightstands",
+    name: "Noma",
+    type: "Bedside & Nightstands",
     category: "Table",
     price: 299,
     description:
@@ -341,7 +366,8 @@ export const products = [
   },
   {
     id: 26,
-    name: "Ottomans",
+    name: "Solace",
+    type: "Ottomans",
     category: "Table",
     price: 469,
     description:
@@ -350,7 +376,8 @@ export const products = [
   },
   {
     id: 27,
-    name: "Nesting",
+    name: "Tessa",
+    type: "Nesting",
     category: "Table",
     price: 179,
     description:
@@ -359,7 +386,8 @@ export const products = [
   },
   {
     id: 28,
-    name: "Aera Pedestal Table",
+    name: "Aurelia",
+    type: "Aera Pedestal Table",
     category: "Table",
     price: 305,
     description:
@@ -373,7 +401,8 @@ export const products = [
   },
   {
     id: 29,
-    name: "C-shaped",
+    name: "Arc",
+    type: "C-shaped",
     category: "Table",
     price: 399,
     description:
@@ -382,7 +411,8 @@ export const products = [
   },
   {
     id: 30,
-    name: "Nora Drum",
+    name: "Nora",
+    type: "Nora Drum",
     category: "Table",
     price: 289,
     description:

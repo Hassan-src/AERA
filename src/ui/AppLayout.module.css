@@ -1,7 +1,5 @@
 .main {
-  border: 3px solid red;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   z-index: 1;
 }
