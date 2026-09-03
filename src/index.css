@@ -105,6 +105,9 @@ button {
   font-family: var(--font);
   font-size: var(--p-text-size);
   color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: box-shadow 0.2s ease-in-out;
   &:hover {
     cursor: pointer;

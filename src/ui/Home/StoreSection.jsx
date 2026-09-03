@@ -1,30 +1,35 @@
-import styles from "./StoreSection.module.css";
 import { products } from "../../data/products";
+
+import styles from "./StoreSection.module.css";
+
+import asideImage from "../../assets/LuxuryOttomanTableTransparent.avif";
+import cart from "../../assets/cart.svg";
+
 function StoreSection() {
-  const storeData = products.slice(0, 3);
-  const image = storeData.map((data) => data.image);
-  console.log(image.map((i) => i.imageTransparent));
+  const storeData = products.slice(1, 4);
   return (
     <div className={styles.main}>
       <div className={styles.aside}>
         <span className={styles.asideNumber}>02</span>
         <div className={styles.asideImageBox}>
-          {/* <img
-            className={styles.heroAsideImage}
+          <img
+            className={styles.asideImage}
             src={asideImage}
-            alt="MiloClubChair"
-          /> */}
+            alt="ChaiseLoungeSofa"
+          />
         </div>
-        <span className={styles.asideName}>milo club</span>
+        <span className={styles.asideName}>Ottoman</span>
       </div>
       <div className={styles.mainContent}>
         {storeData.map((data) => (
-          <div className={styles.merches}>
-            <img
-              className={styles.merchImage}
-              src={data.image.imageTransparent}
-              alt={data.type}
-            />
+          <div className={styles.merches} key={data.id}>
+            <div className={styles.merchImageBox}>
+              <img
+                className={styles.merchImage}
+                src={data?.imageTransparent || data.imageMain}
+                alt={data.type}
+              />
+            </div>
             <div className={styles.merchDescription}>
               <span className={styles.merchTypeName}>{data.type}</span>
               <div className={styles.merchNamePriceBox}>
@@ -35,7 +40,9 @@ function StoreSection() {
                 </span>
               </div>
             </div>
-            <button className={styles.buyNowBtn}>DS</button>
+            <button className={styles.buyNowBtn}>
+              <img className={styles.buyNowBtnImage} src={cart} alt="cart" />
+            </button>
           </div>
         ))}
       </div>

@@ -33,7 +33,7 @@
   justify-content: center;
 }
 .asideImage {
-  width: 110px;
+  width: 100px;
 }
 .asideName {
   margin-left: auto;
@@ -60,19 +60,19 @@
   font-size: 3rem;
   letter-spacing: 0.3rem;
   margin-bottom: var(--spacing-xlg);
-  margin-left: 10.9rem;
+  margin-left: 11.1rem;
 }
 .heroHeader {
   text-transform: lowercase;
   font-size: 10rem;
   z-index: 3;
   font-weight: 500;
-  margin-left: 10.9rem;
+  margin-left: 11.1rem;
 }
 .showRoom {
   display: flex;
   align-items: center;
-  padding-left: 10.5rem;
+  padding-left: 10.8rem;
   margin-top: 7rem;
 }
 .showRoomText {
@@ -103,16 +103,19 @@
   width: 45%;
   height: 100%;
   background-color: var(--color-surface-secondary);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-sm) 0;
 }
 .imagSidePic {
-  width: 550px;
-  height: 550px;
-  margin-left: 5rem;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
 }
 .imageSideBorderGlow {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   border-radius: 50%;
   border-bottom: 5px solid var(--color-accent-light);
   border-left: 0.5px solid var(--color-accent-light);
