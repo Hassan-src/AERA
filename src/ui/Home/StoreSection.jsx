@@ -6,7 +6,11 @@ import asideImage from "../../assets/LuxuryOttomanTableTransparent.avif";
 import cart from "../../assets/cart.svg";
 
 function StoreSection() {
-  const storeData = products.slice(1, 4);
+  const storeData = [
+    products.find((data) => data.category === "Sofa"),
+    products.find((data) => data.category === "Table"),
+    products.find((data) => data.category === "Chair"),
+  ];
   return (
     <div className={styles.main}>
       <div className={styles.aside}>
@@ -26,7 +30,7 @@ function StoreSection() {
             <div className={styles.merchImageBox}>
               <img
                 className={styles.merchImage}
-                src={data?.imageTransparent || data.imageMain}
+                src={data.imageTransparent}
                 alt={data.type}
               />
             </div>

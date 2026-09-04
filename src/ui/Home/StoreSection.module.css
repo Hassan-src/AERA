@@ -72,6 +72,9 @@
     border-bottom-left-radius: 0;
     z-index: 1;
   }
+  &:last-child .merchImage {
+    width: 250px;
+  }
 }
 .merchImageBox {
   width: 100%;

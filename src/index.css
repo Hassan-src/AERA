@@ -68,7 +68,7 @@ body,
   height: 100%;
 }
 body {
-  color: var(--text-color);
+  color: var(--color-text);
   background-color: var(--color-bg);
 }
 #root {
@@ -112,5 +112,15 @@ button {
   &:hover {
     cursor: pointer;
     box-shadow: var(--shadow);
+  }
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--font);
+  color: var(--color-text);
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: var(--color-text-secondary);
   }
 }
