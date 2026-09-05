@@ -4,7 +4,7 @@ import styles from "./StoreSection.module.css";
 
 import asideImage from "../../assets/LuxuryOttomanTableTransparent.avif";
 import cart from "../../assets/cart.svg";
-
+import arrow from "../../assets/Arrow-right.svg";
 function StoreSection() {
   const storeData = [
     products.find((data) => data.category === "Sofa"),
@@ -46,6 +46,14 @@ function StoreSection() {
             </div>
             <button className={styles.buyNowBtn}>
               <img className={styles.buyNowBtnImage} src={cart} alt="cart" />
+            </button>
+            <button className={styles.categoryBtn}>
+              {data.category} category
+              <img
+                className={styles.categoryBtnArrow}
+                src={arrow}
+                alt="arrow"
+              />
             </button>
           </div>
         ))}

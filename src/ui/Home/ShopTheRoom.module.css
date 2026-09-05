@@ -8,12 +8,12 @@
 .aside {
   min-width: 180px;
   padding: 8rem 0 0 0;
-  background-color: var(--color-brown);
+  background-color: var(--color-bg);
   display: flex;
   gap: var(--spacing-lg);
   flex-direction: column;
   border-right: 2px solid var(--color-border);
-  color: var(--color-accent-dark);
+  color: var(--color-text-secondary);
 }
 .asideNumber {
   margin-left: auto;
@@ -25,16 +25,16 @@
   height: 180px;
   background: linear-gradient(
     135deg,
-    var(--color-darkest) 0%,
-    #332119 50%,
-    #513529 100%
+    var(--color-bg) 0%,
+    rgb(240, 235, 232) 50%,
+    #e8e4e3 100%
   );
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .asideImage {
-  width: 130px;
+  width: 150px;
 }
 .asideName {
   margin-left: auto;
@@ -47,13 +47,13 @@
 .mapSection {
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/PickYourFurniture.avif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
-a {
+.mapSectionBackGround {
+  width: 100%;
+  height: 100%;
+}
+.linkUni {
   z-index: 2;
   text-transform: capitalize;
   font-weight: 700;
@@ -98,8 +98,8 @@ a {
 
 .ottomans {
   position: absolute;
-  bottom: 20%;
-  right: 25%;
+  bottom: 27%;
+  right: 26%;
   z-index: 2;
   &::after {
     content: "";
@@ -200,7 +200,7 @@ a {
 
 .arco {
   position: absolute;
-  top: 16%;
+  top: 14%;
   left: 39%;
   z-index: 2;
   &::after {
@@ -336,7 +336,7 @@ a {
 
 .cove {
   position: absolute;
-  top: 62%;
+  top: 55%;
   left: 26%;
   z-index: 2;
   &::after {
