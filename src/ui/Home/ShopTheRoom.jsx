@@ -5,17 +5,6 @@ import backGround from "../../assets/PickYourFurniture.avif";
 function ShopTheRoom() {
   return (
     <div className={styles.main}>
-      <div className={styles.aside}>
-        <span className={styles.asideNumber}>03</span>
-        <div className={styles.asideImageBox}>
-          <img
-            className={styles.asideImage}
-            src={asideImage}
-            alt="ChaiseLoungeSofa"
-          />
-        </div>
-        <span className={styles.asideName}>Oslo</span>
-      </div>
       <div className={styles.mapSection}>
         <img
           className={styles.mapSectionBackGround}

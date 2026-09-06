@@ -4,45 +4,6 @@
   display: flex;
   flex: 0 0 80dvh;
 }
-.aside {
-  min-width: 180px;
-  padding: 8rem 0 0 0;
-  background-color: var(--color-bg);
-  display: flex;
-  gap: var(--spacing-lg);
-  flex-direction: column;
-  border-right: 2px solid var(--color-border);
-  color: var(--color-brown);
-}
-.asideNumber {
-  margin-left: auto;
-  font-size: 3rem;
-  margin-right: var(--spacing-md);
-}
-.asideImageBox {
-  width: 100%;
-  height: 180px;
-  background: linear-gradient(
-    135deg,
-    var(--color-bg) 0%,
-    rgb(240, 235, 232) 50%,
-    #e8e4e3 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.asideImage {
-  width: 100px;
-}
-.asideName {
-  margin-left: auto;
-  font-size: 3rem;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  text-transform: capitalize;
-  margin-right: var(--spacing-md);
-}
 .textSide {
   width: 45%;
   max-width: 50%;

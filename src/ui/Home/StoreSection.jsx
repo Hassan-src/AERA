@@ -2,7 +2,6 @@ import { products } from "../../data/products";
 
 import styles from "./StoreSection.module.css";
 
-import asideImage from "../../assets/LuxuryOttomanTableTransparent.avif";
 import cart from "../../assets/cart.svg";
 import arrow from "../../assets/Arrow-right.svg";
 function StoreSection() {
@@ -13,17 +12,6 @@ function StoreSection() {
   ];
   return (
     <div className={styles.main}>
-      <div className={styles.aside}>
-        <span className={styles.asideNumber}>02</span>
-        <div className={styles.asideImageBox}>
-          <img
-            className={styles.asideImage}
-            src={asideImage}
-            alt="ChaiseLoungeSofa"
-          />
-        </div>
-        <span className={styles.asideName}>Ottoman</span>
-      </div>
       <div className={styles.mainContent}>
         {storeData.map((data) => (
           <div className={styles.merches} key={data.id}>

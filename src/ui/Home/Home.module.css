@@ -9,11 +9,6 @@
   min-height: 100dvh;
   display: flex;
   z-index: -2;
-  background-image: url("../../assets/BackGround.avif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
