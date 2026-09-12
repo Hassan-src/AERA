@@ -1,12 +1,12 @@
 .hero {
+  border: 3px solid red;
   width: 100%;
-  height: 80dvh;
+  height: 100dvh;
   display: flex;
-  flex: 0 0 80dvh;
+  flex: 0 0 100dvh;
 }
 .textSide {
-  width: 45%;
-  max-width: 50%;
+  width: 50%;
   height: 100%;
   background-color: var(--color-bg);
   border-right: 2px solid var(--color-border);
@@ -61,7 +61,7 @@
   }
 }
 .imageSide {
-  width: 45%;
+  width: 50%;
   height: 100%;
   background-color: var(--color-surface-secondary);
   padding: var(--spacing-sm) 0;

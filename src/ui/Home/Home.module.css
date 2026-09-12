@@ -1,21 +1,20 @@
-.home {
-  width: 90dvw;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-}
 .main {
   width: 100%;
   min-height: 100dvh;
   display: flex;
+  justify-content: center;
   z-index: -2;
-  overflow-y: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+.home {
+  width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
 .section {
-  height: 80dvh;
-  margin: 10dvh 0;
+  height: 100dvh;
   scroll-snap-align: center;
   flex-shrink: 0;
   scroll-snap-stop: always;

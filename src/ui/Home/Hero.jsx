@@ -1,7 +1,6 @@
 import styles from "./Hero.module.css";
 
 import heroImage from "../../assets/EamesLoungeChairTransparent.avif";
-import asideImage from "../../assets/MiloClubChairTransparent.avif";
 
 function Hero() {
   return (
