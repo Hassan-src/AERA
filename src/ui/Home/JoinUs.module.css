@@ -1,0 +1,20 @@
+.main {
+  width: 100%;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80dvh;
+}
+.shipment {
+  width: 100%;
+  height: 35dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-surface-secondary);
+}
+.joinUs {
+  width: 100%;
+  height: 45dvh;
+  background-color: var(--color-surface);
+}

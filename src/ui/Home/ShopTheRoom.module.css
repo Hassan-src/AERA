@@ -3,16 +3,31 @@
   height: 100dvh;
   flex: 0 0 100dvh;
   display: flex;
+  justify-content: center;
   background-color: var(--color-surface);
 }
-.mapSection {
+.mainBox {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  margin-bottom: var(--spacing-lg);
+}
+.mapSection {
+  width: 85%;
+  height: 80%;
+  border: 3px solid var(--color-border);
+  padding: var(--spacing-sm);
+  border-radius: 20px;
   position: relative;
 }
 .mapSectionBackGround {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 .linkUni {
   z-index: 2;

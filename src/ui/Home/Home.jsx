@@ -3,6 +3,8 @@ import StoreSection from "./StoreSection";
 
 import styles from "./Home.module.css";
 import ShopTheRoom from "./ShopTheRoom";
+import OurStory from "./OurStory";
+import JoinUs from "./JoinUs";
 
 function Home() {
   return (
@@ -16,6 +18,12 @@ function Home() {
         </section>
         <section className={styles.section}>
           <ShopTheRoom />
+        </section>
+        <section className={styles.section}>
+          <OurStory />
+        </section>
+        <section className={styles.section}>
+          <JoinUs />
         </section>
       </div>
     </div>
