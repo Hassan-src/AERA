@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0, 0.2) 50%,
+    rgb(250, 250, 250, 0.1) 100%
+  );
+  position: fixed;
+}

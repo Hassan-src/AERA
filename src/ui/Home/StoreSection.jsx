@@ -2,8 +2,8 @@ import { products } from "../../data/products";
 
 import styles from "./StoreSection.module.css";
 
-import cart from "../../assets/cart.svg";
-import arrow from "../../assets/Arrow-right.svg";
+import cart from "../../assets/svgs/cart.svg";
+import arrow from "../../assets/svgs/Arrow-right.svg";
 function StoreSection() {
   const storeData = [
     products.find((data) => data.category === "Sofa"),

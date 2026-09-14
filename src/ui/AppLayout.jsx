@@ -5,11 +5,11 @@ import styles from "./AppLayout.module.css";
 function AppLayout() {
   return (
     <>
-      <Header />
       <main className={styles.main}>
+        <Header />
         <Outlet />
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

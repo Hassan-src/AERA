@@ -10,19 +10,19 @@ function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.home}>
-        <section className={styles.section}>
+        <section className={styles.section} id="hero">
           <Hero />
         </section>
-        <section className={styles.section}>
+        <section className={styles.section} id="storeSection">
           <StoreSection />
         </section>
-        <section className={styles.section}>
+        <section className={styles.section} id="shopTheRoom">
           <ShopTheRoom />
         </section>
-        <section className={styles.section}>
+        <section className={styles.section} id="ourStory">
           <OurStory />
         </section>
-        <section className={styles.section}>
+        <section className={styles.section} id="joinUs">
           <JoinUs />
         </section>
       </div>
