@@ -1,0 +1,36 @@
+.main {
+  width: 60%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-xlg);
+}
+.backBtn {
+  width: fit-content;
+  background-color: transparent;
+  color: var(--color-text);
+  margin-right: auto;
+  margin: var(--spacing-lg) 0;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    box-shadow: none;
+    color: var(--color-text-secondary);
+  }
+}
+.header {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-xlg);
+  text-align: center;
+}
+.quote {
+  background-color: var(--color-accent-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  &::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: var(--color-darkest);
+  }
+}

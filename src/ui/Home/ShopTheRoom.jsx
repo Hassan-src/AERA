@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import Button from "../Button";
+
 import styles from "./ShopTheRoom.module.css";
-import backGround from "../../assets/PickYourFurniture.avif";
+
+import backGround from "../../assets/pics/PickYourFurniture.avif";
+
 function ShopTheRoom() {
   return (
     <div className={styles.main}>
@@ -13,54 +16,60 @@ function ShopTheRoom() {
             alt="ShopTheRoom"
           />
           <div className={styles.windsor}>
-            <Link className={`${styles.windsorLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.windsorLink} ${styles.linkUni}`} to="">
               Windsor
-            </Link>
+            </Button>
           </div>
           <div className={styles.ottomans}>
-            <Link className={`${styles.ottomansLink} ${styles.linkUni}`} to="">
+            <Button
+              className={`${styles.ottomansLink} ${styles.linkUni}`}
+              to=""
+            >
               Ottoman
-            </Link>
+            </Button>
           </div>
           <div className={styles.barcelona}>
-            <Link className={`${styles.barcelonaLink} ${styles.linkUni}`} to="">
+            <Button
+              className={`${styles.barcelonaLink} ${styles.linkUni}`}
+              to=""
+            >
               Barcelona
-            </Link>
+            </Button>
           </div>
           <div className={styles.palmer}>
-            <Link className={`${styles.palmerLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.palmerLink} ${styles.linkUni}`} to="">
               Palmer
-            </Link>
+            </Button>
           </div>
           <div className={styles.arco}>
-            <Link className={`${styles.arcoLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.arcoLink} ${styles.linkUni}`} to="">
               Arco
-            </Link>
+            </Button>
           </div>
           <div className={styles.tessa}>
-            <Link className={`${styles.tessaLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.tessaLink} ${styles.linkUni}`} to="">
               Tessa
-            </Link>
+            </Button>
           </div>
           <div className={styles.aurelia}>
-            <Link className={`${styles.aureliaLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.aureliaLink} ${styles.linkUni}`} to="">
               Aurelia
-            </Link>
+            </Button>
           </div>
           <div className={styles.nora}>
-            <Link className={`${styles.noraLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.noraLink} ${styles.linkUni}`} to="">
               Nora
-            </Link>
+            </Button>
           </div>
           <div className={styles.cove}>
-            <Link className={`${styles.coveLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.coveLink} ${styles.linkUni}`} to="">
               Cove
-            </Link>
+            </Button>
           </div>
           <div className={styles.atelier}>
-            <Link className={`${styles.atelierLink} ${styles.linkUni}`} to="">
+            <Button className={`${styles.atelierLink} ${styles.linkUni}`} to="">
               Atelier
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

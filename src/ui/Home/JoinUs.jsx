@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 import styles from "./JoinUs.module.css";
 
 import sustainable from "../../assets/svgs/sustainable.svg";
@@ -54,7 +56,7 @@ function JoinUs() {
             id="name"
             placeholder="Enter your name"
           />
-          <button className={styles.joinUsBtn}>Subscribe</button>
+          <Button className={styles.joinUsBtn}>Subscribe</Button>
         </form>
       </div>
     </div>

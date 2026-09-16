@@ -1,6 +1,8 @@
+import Button from "../Button";
+
 import styles from "./Hero.module.css";
 
-import heroImage from "../../assets/HeroBackGroundImage.avif";
+import heroImage from "../../assets/pics/HeroBackGroundImage.avif";
 
 function Hero() {
   return (
@@ -14,7 +16,7 @@ function Hero() {
               Our furniture is an excellent symbol of the owner's great taste.
               Buy from us and emphasize your originality
             </p>
-            <button className={styles.showRoomBtn}>showroom</button>
+            <Button className={styles.showRoomBtn}>showroom</Button>
           </div>
         </div>
       </div>

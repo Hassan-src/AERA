@@ -1,4 +1,5 @@
 import { products } from "../../data/products";
+import Button from "../Button";
 
 import styles from "./StoreSection.module.css";
 
@@ -37,17 +38,17 @@ function StoreSection() {
                   </span>
                 </div>
               </div>
-              <button className={styles.buyNowBtn}>
+              <Button className={styles.buyNowBtn}>
                 <img className={styles.buyNowBtnImage} src={cart} alt="cart" />
-              </button>
-              <button className={styles.categoryBtn}>
+              </Button>
+              <Button className={styles.categoryBtn}>
                 {data.category} category
                 <img
                   className={styles.categoryBtnArrow}
                   src={arrow}
                   alt="arrow"
                 />
-              </button>
+              </Button>
             </div>
           ))}
         </div>

@@ -47,6 +47,7 @@
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xlg: 3rem;
+  --border-radius: 5px;
 
   font: 18px/145% var(--font);
   color: var(--color-text);
@@ -110,7 +111,7 @@ button {
   color: var(--color-text-muted);
   border: none;
   transition: box-shadow 0.2s ease-in-out;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   &:hover {
     cursor: pointer;
     box-shadow: var(--shadow);

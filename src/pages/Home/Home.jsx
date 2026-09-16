@@ -1,10 +1,10 @@
-import Hero from "./Hero";
-import StoreSection from "./StoreSection";
+import Hero from "../../ui/Home/Hero";
+import StoreSection from "../../ui/Home/StoreSection";
 
 import styles from "./Home.module.css";
-import ShopTheRoom from "./ShopTheRoom";
-import OurStory from "./OurStory";
-import JoinUs from "./JoinUs";
+import ShopTheRoom from "../../ui/Home/ShopTheRoom";
+import OurStory from "../../ui/Home/OurStory";
+import JoinUs from "../../ui/Home/JoinUs";
 
 function Home() {
   return (

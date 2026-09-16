@@ -5,7 +5,7 @@
     <style>
       .st0, .st1 {
         fill: none;
-        stroke: #f6f1ee;
+        stroke: #140d0a;
         stroke-miterlimit: 133.33;
         stroke-width: 50px;
       }

@@ -1,92 +1,92 @@
-import GrandChesterfield from "../assets/GrandChesterfieldsofa.avif";
-import GrandChesterfieldTransparent from "../assets/GrandChesterfieldsofaTransparent.avif";
+import GrandChesterfield from "../assets/pics/GrandChesterfieldsofa.avif";
+import GrandChesterfieldTransparent from "../assets/pics/GrandChesterfieldsofaTransparent.avif";
 
-import Compact2seater from "../assets/Compact2seatersofa.avif";
-import Compact2seaterTransparent from "../assets/Compact2seatersofaTransparent.avif";
+import Compact2seater from "../assets/pics/Compact2seatersofa.avif";
+import Compact2seaterTransparent from "../assets/pics/Compact2seatersofaTransparent.avif";
 
-import Versatilesectional from "../assets/VersatileSectionalSofa.avif";
-import VersatilesectionalTransparent from "../assets/VersatilesectionalSofaTransparent.avif";
+import Versatilesectional from "../assets/pics/VersatileSectionalSofa.avif";
+import VersatilesectionalTransparent from "../assets/pics/VersatilesectionalSofaTransparent.avif";
 
-import Spaciouscorner from "../assets/Cornersofa.avif";
-import SpaciouscornerTransparent from "../assets/CornersofaTransparent.avif";
+import Spaciouscorner from "../assets/pics/Cornersofa.avif";
+import SpaciouscornerTransparent from "../assets/pics/CornersofaTransparent.avif";
 
-import Stylishchaiselounge from "../assets/Chaiseloungesofa.avif";
-import StylishchaiseloungeTransparent from "../assets/ChaiseloungesofaTransparent.avif";
+import Stylishchaiselounge from "../assets/pics/Chaiseloungesofa.avif";
+import StylishchaiseloungeTransparent from "../assets/pics/ChaiseloungesofaTransparent.avif";
 
-import Relaxingrecliner from "../assets/RelaxingReclinerSofa.avif";
-import RelaxingreclinerTransparent from "../assets/RelaxingreclinersofaTransparent.avif";
+import Relaxingrecliner from "../assets/pics/RelaxingReclinerSofa.avif";
+import RelaxingreclinerTransparent from "../assets/pics/RelaxingreclinersofaTransparent.avif";
 
-import Contemporarysquarearm from "../assets/Contemporarysquarearmsofa.avif";
-import ContemporarysquarearmTransparent from "../assets/ContemporarysquarearmsofaTransparent.avif";
+import Contemporarysquarearm from "../assets/pics/Contemporarysquarearmsofa.avif";
+import ContemporarysquarearmTransparent from "../assets/pics/ContemporarysquarearmsofaTransparent.avif";
 
-import Timelessmidcentury from "../assets/Midcenturysofa.avif";
-import TimelessmidcenturyTransparent from "../assets/MidcenturysofaTransparent.avif";
+import Timelessmidcentury from "../assets/pics/Midcenturysofa.avif";
+import TimelessmidcenturyTransparent from "../assets/pics/MidcenturysofaTransparent.avif";
 
-import Eleganthighback from "../assets/Highbacksofa.avif";
-import EleganthighbackTransparent from "../assets/HighbacksofaTransparent.avif";
+import Eleganthighback from "../assets/pics/Highbacksofa.avif";
+import EleganthighbackTransparent from "../assets/pics/HighbacksofaTransparent.avif";
 
-import Modernwedgearm from "../assets/Modernwedgearmsofa.avif";
-import ModernwedgearmTransparent from "../assets/ModernwedgearmsofaTransparent.avif";
+import Modernwedgearm from "../assets/pics/Modernwedgearmsofa.avif";
+import ModernwedgearmTransparent from "../assets/pics/ModernwedgearmsofaTransparent.avif";
 
-import WombChair from "../assets/WombChair.avif";
-import WombChairTransparent from "../assets/WombChairTransparent.avif";
+import WombChair from "../assets/pics/WombChair.avif";
+import WombChairTransparent from "../assets/pics/WombChairTransparent.avif";
 
-import Adirondack from "../assets/Adirondackchair.avif";
-import AdirondackTransparent from "../assets/AdirondackchairTransparent.avif";
+import Adirondack from "../assets/pics/Adirondackchair.avif";
+import AdirondackTransparent from "../assets/pics/AdirondackchairTransparent.avif";
 
-import Barcelona from "../assets/BarcelonaChair.avif";
-import BarcelonaTransparent from "../assets/BarcelonaChairTransparent.avif";
+import Barcelona from "../assets/pics/BarcelonaChair.avif";
+import BarcelonaTransparent from "../assets/pics/BarcelonaChairTransparent.avif";
 
-import Bentwood from "../assets/BentwoodChair.avif";
-import BentwoodTransparent from "../assets/BentwoodChairTransparent.avif";
+import Bentwood from "../assets/pics/BentwoodChair.avif";
+import BentwoodTransparent from "../assets/pics/BentwoodChairTransparent.avif";
 
-import Bergère from "../assets/Bergèrechair.avif";
-import BergèreTransparent from "../assets/BergèrechairTransparent.avif";
+import Bergère from "../assets/pics/Bergèrechair.avif";
+import BergèreTransparent from "../assets/pics/BergèrechairTransparent.avif";
 
-import Cantilever from "../assets/CantileverChair.avif";
-import CantileverTransparent from "../assets/CantileverChairTransparent.avif";
+import Cantilever from "../assets/pics/CantileverChair.avif";
+import CantileverTransparent from "../assets/pics/CantileverChairTransparent.avif";
 
-import Tulip from "../assets/TulipChair.avif";
-import TulipTransparent from "../assets/TulipChairTransparent.avif";
+import Tulip from "../assets/pics/TulipChair.avif";
+import TulipTransparent from "../assets/pics/TulipChairTransparent.avif";
 
-import Wingback from "../assets/WingbackChair.avif";
-import WingbackTransparent from "../assets/WingbackChairTransparent.avif";
+import Wingback from "../assets/pics/WingbackChair.avif";
+import WingbackTransparent from "../assets/pics/WingbackChairTransparent.avif";
 
-import MiloClub from "../assets/MiloClubChair.avif";
-import MiloClubTransparent from "../assets/MiloClubChairTransparent.avif";
+import MiloClub from "../assets/pics/MiloClubChair.avif";
+import MiloClubTransparent from "../assets/pics/MiloClubChairTransparent.avif";
 
-import EamesLounge from "../assets/EamesLoungeChair.avif";
-import EamesLoungeTransparent from "../assets/EamesLoungeChairTransparent.avif";
+import EamesLounge from "../assets/pics/EamesLoungeChair.avif";
+import EamesLoungeTransparent from "../assets/pics/EamesLoungeChairTransparent.avif";
 
-import ArcoCoffeeTable from "../assets/ArcoCoffeeTable.avif";
-import ArcoCoffeeTableTransparent from "../assets/ArcoCoffeeTableTransparent.avif";
+import ArcoCoffeeTable from "../assets/pics/ArcoCoffeeTable.avif";
+import ArcoCoffeeTableTransparent from "../assets/pics/ArcoCoffeeTableTransparent.avif";
 
-import EndSide from "../assets/modernSideTable.avif";
-import EndSideTransparent from "../assets/modernSideTableTransparent.avif";
+import EndSide from "../assets/pics/modernSideTable.avif";
+import EndSideTransparent from "../assets/pics/modernSideTableTransparent.avif";
 
-import OfficeDesks from "../assets/Officedesk.avif";
-import OfficeDesksTransparent from "../assets/OfficedeskTransparent.avif";
+import OfficeDesks from "../assets/pics/Officedesk.avif";
+import OfficeDesksTransparent from "../assets/pics/OfficedeskTransparent.avif";
 
-import FormaConsoleTable from "../assets/FormaConsoleTable.avif";
-import FormaConsoleTableTransparent from "../assets/FormaConsoleTableTransparent.avif";
+import FormaConsoleTable from "../assets/pics/FormaConsoleTable.avif";
+import FormaConsoleTableTransparent from "../assets/pics/FormaConsoleTableTransparent.avif";
 
-import BedsideNightstands from "../assets/Bedsidetable.avif";
-import BedsideNightstandsTransparent from "../assets/BedsidetableTransparent.avif";
+import BedsideNightstands from "../assets/pics/Bedsidetable.avif";
+import BedsideNightstandsTransparent from "../assets/pics/BedsidetableTransparent.avif";
 
-import Ottomans from "../assets/LuxuryOttoman.avif";
-import OttomansTransparent from "../assets/LuxuryOttomanTableTransparent.avif";
+import Ottomans from "../assets/pics/LuxuryOttoman.avif";
+import OttomansTransparent from "../assets/pics/LuxuryOttomanTableTransparent.avif";
 
-import Nesting from "../assets/Nestingtable.avif";
-import NestingTransparent from "../assets/NestingtableTransparent.avif";
+import Nesting from "../assets/pics/Nestingtable.avif";
+import NestingTransparent from "../assets/pics/NestingtableTransparent.avif";
 
-import AeraPedestalTable from "../assets/AeraPedestalTable.avif";
-import AeraPedestalTableTransparent from "../assets/AeraPedestalTableTransparent.avif";
+import AeraPedestalTable from "../assets/pics/AeraPedestalTable.avif";
+import AeraPedestalTableTransparent from "../assets/pics/AeraPedestalTableTransparent.avif";
 
-import Cshaped from "../assets/Cshapedtable.avif";
-import CshapedTransparent from "../assets/CshapedtableTransparent.avif";
+import Cshaped from "../assets/pics/Cshapedtable.avif";
+import CshapedTransparent from "../assets/pics/CshapedtableTransparent.avif";
 
-import NoraDrum from "../assets/NoraDrumTable.avif";
-import NoraDrumTransparent from "../assets/NoraDrumTableTransparent.avif";
+import NoraDrum from "../assets/pics/NoraDrumTable.avif";
+import NoraDrumTransparent from "../assets/pics/NoraDrumTableTransparent.avif";
 
 export const products = [
   {

@@ -1,6 +1,9 @@
+import Button from "../Button";
+
 import styles from "./OurStory.module.css";
-import background from "../../assets/OurStoryBackGroundImage.avif";
-import { Link } from "react-router-dom";
+
+import background from "../../assets/pics/OurStoryBackGroundImage.avif";
+
 function OurStory() {
   return (
     <div className={styles.main}>
@@ -16,7 +19,10 @@ function OurStory() {
           Every peice is handcrafted with sustainable materials and traditional
           techniques, designed to age beautifully with you.
         </p>
-        <Link className={styles.storyLink}>Learn our story</Link>
+        {/* Has to be the button component */}
+        <Button className={styles.storyLink} to={"./LearnOurStory"}>
+          Learn our story
+        </Button>
       </div>
     </div>
   );
