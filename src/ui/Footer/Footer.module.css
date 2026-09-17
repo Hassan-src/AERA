@@ -31,6 +31,10 @@
 .githubLogo {
   width: 25px;
 }
+.gitHubLink {
+  display: flex;
+  align-items: center;
+}
 .listBox {
   display: flex;
   flex-direction: column;

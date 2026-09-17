@@ -80,7 +80,7 @@ function Footer() {
             </Button>
           </li>
           <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
+            <Button className={styles.listChild} to={"/Shipping & returns"}>
               Shipping & returns
             </Button>
           </li>

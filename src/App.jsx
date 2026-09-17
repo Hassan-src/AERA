@@ -6,6 +6,7 @@ import LearnOurStory from "./pages/LearnOurStory/LearnOurStory";
 import CraftsmanShip from "./pages/CraftsmanShip/CraftsmanShip";
 import Sustainability from "./pages/Sustainability/Sustainability";
 import FAQ from "./pages/FAQ/FAQ";
+import ShippingReturns from "./pages/Shipping & returns/Shipping&Returns";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/FAQ",
         element: <FAQ />,
+      },
+      {
+        path: "/Shipping & returns",
+        element: <ShippingReturns />,
       },
     ],
   },
