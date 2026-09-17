@@ -2,7 +2,7 @@ import Button from "../Button";
 
 import styles from "./Header.module.css";
 
-import logo from "../../assets/svgs/logo.svg";
+import logo from "../../assets/svgs/logoHeader.svg";
 import cart from "../../assets/svgs/cart.svg";
 import search from "../../assets/svgs/search.svg";
 import profile from "../../assets/svgs/profile.svg";
@@ -16,16 +16,13 @@ function Header() {
       </div>
       <ul className={styles.linksList}>
         <li>
-          <a href="#hero">hero</a>
+          <a href="#storeSection">Store</a>
         </li>
         <li>
-          <a href="#storeSection">StoreSection</a>
+          <a href="#shopTheRoom">Shop The Room</a>
         </li>
         <li>
-          <a href="#shopTheRoom">ShopTheRoom</a>
-        </li>
-        <li>
-          <a href="#ourStory">ourStory</a>
+          <a href="#ourStory">our Story</a>
         </li>
         <li>
           <a href="#joinUs">joinUs</a>

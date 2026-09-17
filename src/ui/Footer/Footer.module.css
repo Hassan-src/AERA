@@ -1,0 +1,73 @@
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-darkest);
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+.company {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+.logo {
+  width: 40px;
+}
+.companySlogan {
+  color: var(--color-accent);
+}
+.socialMediaBox {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.xLogo {
+  width: 20px;
+}
+.instagramLogo {
+  width: 25px;
+}
+.githubLogo {
+  width: 25px;
+}
+.listBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+.listName {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.listChild {
+  color: var(--color-accent);
+  &:hover {
+    color: rgb(167, 117, 42);
+  }
+}
+.promises {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.promise {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+.promiseImage {
+  width: 25px;
+}
+.promiseText {
+  color: var(--color-text-secondary);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: var(--color-accent-light);
+}

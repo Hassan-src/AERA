@@ -3,12 +3,17 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  padding-top: var(--spacing-lg);
+  padding-top: var(--spacing-xlg);
 }
 
 .header {
   font-size: 3rem;
   margin-bottom: var(--spacing-xlg);
+}
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg);
 }
 .quote {
   background-color: var(--color-accent-light);

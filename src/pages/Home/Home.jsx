@@ -22,7 +22,7 @@ function Home() {
         <section className={styles.section} id="ourStory">
           <OurStory />
         </section>
-        <section className={styles.section} id="joinUs">
+        <section className={styles.sectionJoinUs} id="joinUs">
           <JoinUs />
         </section>
       </div>

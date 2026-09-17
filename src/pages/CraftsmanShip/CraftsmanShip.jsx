@@ -1,13 +1,12 @@
 import Button from "../../ui/Button";
-import styles from "./LearnOurStory.module.css";
-
-function LearnOurStory() {
+import styles from "./CraftsmanShip.module.css";
+function CraftsmanShip() {
   return (
     <div className={styles.main}>
       <Button className={styles.backBtn} to={"/"}>
         &larr; Back
       </Button>
-      <h1 className={styles.header}>Learn Our Story</h1>
+      <h1 className={styles.header}>CraftsmanShip</h1>
       <p className={styles.text}>
         At <b>AERA Furniture</b>, we believe exceptional furniture is more than
         something you place in a room — it is part of the atmosphere you create,
@@ -56,4 +55,4 @@ function LearnOurStory() {
   );
 }
 
-export default LearnOurStory;
+export default CraftsmanShip;

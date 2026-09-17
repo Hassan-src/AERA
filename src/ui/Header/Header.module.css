@@ -1,14 +1,11 @@
 .header {
   width: 100%;
   height: 80px;
-  background-color: rgb(246, 241, 238, 0.8);
+  background-color: var(--color-bg);
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  position: fixed;
   padding: var(--spacing-sm) var(--spacing-md);
-  /* border-bottom-left-radius: 100%; */
-  /* border-bottom-right-radius: 100%; */
 }
 .logo {
   width: 50px;

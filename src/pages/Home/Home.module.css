@@ -20,3 +20,6 @@
   scroll-snap-stop: always;
   scroll-behavior: smooth;
 }
+.sectionJoinUs {
+  height: 80dvh;
+}

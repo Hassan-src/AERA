@@ -123,6 +123,8 @@ a {
   font-family: var(--font);
   color: var(--color-text);
   transition: color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
   &:hover {
     color: var(--color-text-secondary);
   }
@@ -146,4 +148,14 @@ input {
     outline: 2px solid var(--color-brown);
     outline-offset: 2px;
   }
+}
+::-webkit-scrollbar {
+  background-color: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent-dark);
+  border-radius: var(--border-radius);
+}
+::-webkit-scrollbar {
+  width: 8px;
 }

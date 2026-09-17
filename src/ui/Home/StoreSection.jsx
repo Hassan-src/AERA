@@ -3,7 +3,7 @@ import Button from "../Button";
 
 import styles from "./StoreSection.module.css";
 
-import cart from "../../assets/svgs/cart.svg";
+import cart from "../../assets/svgs/cart-white.svg";
 import arrow from "../../assets/svgs/Arrow-right.svg";
 function StoreSection() {
   const storeData = [
