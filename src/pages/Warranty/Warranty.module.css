@@ -3,7 +3,8 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  padding-top: var(--spacing-lg);
+  padding: var(--spacing-xlg) var(--spacing-lg);
+  overflow-y: auto;
 }
 
 .header {
@@ -13,6 +14,17 @@
 .h2 {
   font-size: 2rem;
   margin-bottom: var(--spacing-lg);
+}
+
+.unorderedList,
+.orderedList {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--spacing-lg);
+  gap: var(--spacing-sm);
+}
+.unorderedList {
+  list-style-type: disc;
 }
 
 .quote {

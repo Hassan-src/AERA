@@ -11,10 +11,10 @@
   margin-bottom: var(--spacing-xlg);
 }
 .h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 2rem;
   margin-bottom: var(--spacing-lg);
 }
+
 .quote {
   background-color: var(--color-accent-light);
   border-radius: var(--border-radius);

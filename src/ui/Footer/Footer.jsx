@@ -21,7 +21,12 @@ function Footer() {
             alt="instagram"
           />
           <img className={styles.xLogo} src={X} alt="X" />
-          <a className={styles.gitHubLink} href="">
+          <a
+            className={styles.gitHubLink}
+            href="https://github.com/Hassan-src"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className={styles.githubLogo} src={github} alt="github" />
           </a>
         </div>
@@ -85,17 +90,17 @@ function Footer() {
             </Button>
           </li>
           <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
+            <Button className={styles.listChild} to={"/Care Instructions"}>
               care instructions
             </Button>
           </li>
           <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
+            <Button className={styles.listChild} to={"/Warranty"}>
               warranty
             </Button>
           </li>
           <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
+            <Button className={styles.listChild} to={"/ContactUs"}>
               contact us
             </Button>
           </li>

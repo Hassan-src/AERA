@@ -3,10 +3,25 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-lg) var(--spacing-md);
   overflow-y: auto;
 }
 
+.documentLinks {
+  height: calc(100dvh - 80px);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  gap: var(--spacing-lg);
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+.arrowImage {
+  width: 6px;
+}
 .header {
   font-size: 3rem;
   margin-bottom: var(--spacing-xlg);
@@ -37,10 +52,13 @@
 }
 .emText {
   background-color: var(--color-accent-light);
-  padding: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-left: 2px solid var(--color-darkest);
 }
 .contactAera {
+  width: fit-content;
+  display: flex;
+  gap: var(--spacing-sm);
   color: var(--color-bg);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius);
@@ -48,6 +66,7 @@
 }
 .contactEmail {
   color: var(--color-bg);
+  text-transform: none;
 }
 .backBtn {
   width: fit-content;

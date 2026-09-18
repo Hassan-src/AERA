@@ -7,49 +7,32 @@ function CraftsmanShip() {
         &larr; Back
       </Button>
       <h1 className={styles.header}>CraftsmanShip</h1>
+      <h2 className={styles.h2}>Made With Purpose</h2>
       <p className={styles.text}>
-        At <b>AERA Furniture</b>, we believe exceptional furniture is more than
-        something you place in a room — it is part of the atmosphere you create,
-        the memories you make, and the way you experience your everyday space.
+        Behind every AERA piece is a deep appreciation for craftsmanship. We
+        believe exceptional furniture is defined by the details — the precision
+        of its construction, the balance of its proportions, the feel of its
+        materials, and the care that goes into bringing an idea to life.
       </p>
       <br />
       <p className={styles.text}>
-        Our story is rooted in a passion for timeless design, thoughtful
-        craftsmanship, and the belief that true luxury comes from simplicity. We
-        create furniture that brings together refined forms, natural materials,
-        and lasting comfort, designed to complement contemporary interiors while
-        maintaining a sense of warmth and character.
-      </p>
-      <br />
-      <p className={styles.text}>
-        Every piece begins with attention to detail. From carefully considered
-        proportions and elegant silhouettes to the textures and finishes that
-        bring each design to life, we believe that the smallest details can make
-        the greatest difference. Our approach is to create pieces that feel
-        sophisticated without being excessive — furniture that quietly stands
-        out and remains beautiful for years to come.
+        Our designs combine contemporary aesthetics with traditional attention
+        to detail. Every curve, joint, surface, and finish is considered to
+        create furniture that feels refined while remaining comfortable and
+        functional.
       </p>
       <br />
       <blockquote className={styles.quote}>
         <q>
-          We believe the most beautiful spaces are not simply furnished — they
-          are thoughtfully composed, lived in, and made timeless.
+          “Good design catches the eye. Great craftsmanship keeps you looking.”
         </q>
       </blockquote>
       <br />
       <p className={styles.text}>
-        Inspired by architecture, nature, and the spaces people call home. This
-        inspiration shapes our collections and encourages us to design furniture
-        that feels balanced, inviting, and effortless. Whether it becomes the
-        centerpiece of a living room or a subtle addition to a carefully curated
-        space, every AERA piece is created with purpose.
-      </p>
-      <br />
-      <p className={styles.text}>
-        <b>
-          Discover the story behind AERA — where thoughtful design,
-          craftsmanship, and timeless living come together.
-        </b>
+        From the first concept to the final finish, we believe furniture should
+        be made with patience, precision, and purpose. The result is a
+        collection designed not simply to fill a space, but to become part of
+        it.
       </p>
     </div>
   );

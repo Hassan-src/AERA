@@ -130,8 +130,13 @@ a {
   font-family: var(--font);
   color: var(--color-text);
   transition: color 0.2s ease-in-out;
+  border-radius: var(--border-radius);
   &:hover {
     color: var(--color-text-secondary);
+  }
+  &:focus {
+    outline: 2px solid var(--color-brown);
+    outline-offset: 3px;
   }
 }
 ul {
