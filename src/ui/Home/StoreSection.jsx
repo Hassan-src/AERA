@@ -16,7 +16,7 @@ function StoreSection() {
       <div className={styles.mainContent}>
         <div className={styles.header}>
           <span className={styles.headerCategories}>categories</span>
-          <h2 className={styles.headerText}>best sellers</h2>
+          <h2 className={styles.headerText}>Selected Pieces</h2>
         </div>
         <div className={styles.content}>
           {storeData.map((data) => (

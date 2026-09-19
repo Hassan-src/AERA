@@ -3,33 +3,23 @@
   height: 80px;
   background-color: var(--color-bg);
   display: flex;
-  justify-content: center;
+  align-items: center;
   justify-content: space-between;
   padding: var(--spacing-sm) var(--spacing-md);
 }
 .logo {
   width: 50px;
 }
-.linksList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-xlg);
-}
 
-.btnBox {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-}
-.btns {
-  background-color: transparent;
-  padding: var(--spacing-sm);
-  transition: background-color 0.1s ease;
-  &:hover {
-    background-color: var(--color-accent);
+@media only screen and (max-width: 800px) {
+  .logo {
+    width: 35px;
+  }
+  .btnBox {
+    gap: var(--spacing-sm);
   }
 }
-.btnImage {
-  width: 20px;
+@media only screen and (max-width: 680px) {
+}
+@media only screen and (max-width: 540px) {
 }

@@ -11,12 +11,14 @@
   --color-text: #312422;
   --color-text-secondary: #766255;
   --color-text-muted: #9f9288;
+  --color-text-light: #f5f1f0;
   /* Borders */
   --color-border: #d6cfca;
   /* Accent */
   --color-accent: #e8d0a7;
-  --color-accent-light: #f0d8ac;
   --color-accent-dark: #d4a759;
+  --color-accent-light: #f0d8ac;
+  --color-accent-lightest: #fbf5e9;
   /* Dark */
   --color-dark: #312422;
   --color-darkest: #140d0a;
@@ -112,10 +114,10 @@ button {
   align-items: center;
   justify-content: center;
   padding: var(--spacing-sm);
-  background-color: var(--color-darkest);
+  background-color: var(--color-dark);
   font-family: var(--font);
   font-size: var(--p-text-size);
-  color: var(--color-text-muted);
+  color: var(--color-text-light);
   border: none;
   transition: box-shadow 0.2s ease-in-out;
   border-radius: var(--border-radius);

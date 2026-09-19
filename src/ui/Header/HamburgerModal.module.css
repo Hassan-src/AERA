@@ -1,0 +1,29 @@
+.modal {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-darkest);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  position: absolute;
+  right: 0;
+  top: 80px;
+  z-index: 999;
+  &:focus {
+    outline: 1px solid var(--color-darkest);
+  }
+}
+.btns {
+  justify-content: flex-start;
+  background-color: transparent;
+  color: var(--color-text);
+  gap: var(--spacing-md);
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--color-darkest);
+    border-radius: 0;
+  }
+}
+.btnImage {
+  width: 20px;
+}

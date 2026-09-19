@@ -63,4 +63,5 @@
 .joinUsInput {
   width: 500px;
   height: 45px;
+  background-color: var(--color-bg);
 }

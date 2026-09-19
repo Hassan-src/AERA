@@ -12,8 +12,30 @@
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+.homeNavBar {
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-darkest);
+  border-bottom: 1px solid var(--color-darkest);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.linksList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xlg);
+}
+
 .section {
+  width: 100%;
   height: 100dvh;
   scroll-snap-align: center;
   flex-shrink: 0;
@@ -21,5 +43,40 @@
   scroll-behavior: smooth;
 }
 .sectionJoinUs {
+  width: 100%;
   height: 80dvh;
+}
+.sectionSlider {
+  width: 100%;
+  height: 6dvh;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 970px) {
+  .homeNavBar {
+    font-size: 0.9rem;
+  }
+  .linksList {
+    gap: var(--spacing-lg);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .homeNavBar {
+    font-size: 0.8rem;
+  }
+  .linksList {
+    gap: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 680px) {
+  .homeNavBar {
+    font-size: 0.7rem;
+  }
+  .linksList {
+    gap: 0.9rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .homeNavBar {
+    font-size: 0.6rem;
+  }
 }

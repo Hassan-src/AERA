@@ -1,0 +1,51 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 6dvh;
+  border-top: 2px solid var(--color-darkest);
+  border-bottom: 2px solid var(--color-darkest);
+  position: relative;
+}
+.slideTrack {
+  width: max-content;
+  display: flex;
+  position: absolute;
+  left: 0;
+  animation: slide 28s linear infinite;
+}
+.sliderList {
+  height: 100%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+.listedTexts {
+  width: max-content;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 2px;
+    height: 25px;
+    background-color: var(--color-dark);
+    margin-left: var(--spacing-lg);
+  }
+  &:last-child {
+    margin-right: var(--spacing-lg);
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,27 @@
+.btnBox {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+.btns {
+  background-color: transparent;
+  padding: var(--spacing-sm);
+  transition: background-color 0.1s ease;
+  &:hover {
+    background-color: var(--color-accent);
+  }
+}
+.btnImage {
+  width: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .btnBox {
+    gap: var(--spacing-sm);
+  }
+}
+@media only screen and (max-width: 680px) {
+  .btnBox {
+    display: none;
+  }
+}

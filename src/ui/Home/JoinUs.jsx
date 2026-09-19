@@ -16,7 +16,7 @@ function JoinUs() {
               src={sustainable}
               alt="sustainability"
             />
-            <h3 className={styles.facilityHeader}>sustainable material</h3>
+            <h3 className={styles.facilityHeader}>Thoughtfully Made</h3>
             <p className={styles.facilityText}>
               FCS-certified wood and eco-friendly textiles source responsibly.
             </p>
@@ -27,7 +27,7 @@ function JoinUs() {
               src={warranty}
               alt="warranty"
             />
-            <h3 className={styles.facilityHeader}>5-years warranty</h3>
+            <h3 className={styles.facilityHeader}>5-year warranty</h3>
             <p className={styles.facilityText}>
               Qualities craftsmanship guaranteed to stand the test of time.
             </p>
@@ -42,9 +42,10 @@ function JoinUs() {
         </ul>
       </div>
       <div className={styles.joinUs}>
-        <h2 className={styles.joinUsHeader}>join our community</h2>
+        <h2 className={styles.joinUsHeader}>Stay in the AERA World</h2>
         <span className={styles.joinUsText}>
-          Subscribe to access exclusive deals, and more.
+          Subscribe for new collections, design stories, and considered pieces
+          for your space.
         </span>
         <form
           className={styles.joinUsForm}
