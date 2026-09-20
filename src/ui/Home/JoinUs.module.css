@@ -15,11 +15,14 @@
 }
 
 .facilitiesList {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5rem;
 }
 .facility {
+  width: calc(100% / 3);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -13,12 +13,12 @@ function StoreSection() {
   ];
   return (
     <div className={styles.main}>
-      <div className={styles.mainContent}>
+      <div className={styles.content}>
         <div className={styles.header}>
           <span className={styles.headerCategories}>categories</span>
           <h2 className={styles.headerText}>Selected Pieces</h2>
         </div>
-        <div className={styles.content}>
+        <div className={styles.merchesMainBox}>
           {storeData.map((data) => (
             <div className={styles.merches} key={data.id}>
               <div className={styles.merchImageBox}>

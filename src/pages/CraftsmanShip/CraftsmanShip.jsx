@@ -24,7 +24,7 @@ function CraftsmanShip() {
       <br />
       <blockquote className={styles.quote}>
         <q>
-          “Good design catches the eye. Great craftsmanship keeps you looking.”
+          Good design catches the eye. Great craftsmanship keeps you looking.
         </q>
       </blockquote>
       <br />
