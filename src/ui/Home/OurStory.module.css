@@ -16,8 +16,11 @@
   height: 100%;
   z-index: -1;
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 .textBox {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,5 +55,75 @@
   &:hover {
     color: #b6b6b6;
     border-color: #b6b6b6;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    font-size: 4rem;
+  }
+  .paragraph {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .philosophyText {
+    font-size: 0.8rem;
+  }
+  .header {
+    font-size: 3.5rem;
+  }
+  .paragraph {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .philosophyText {
+    font-size: 0.7rem;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .paragraph {
+    font-size: 0.8rem;
+  }
+  .storyLink {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .textBox {
+    gap: 1.3rem;
+    padding: 0 var(--spacing-sm);
+  }
+  .philosophyText {
+    font-size: 0.6rem;
+  }
+  .header {
+    font-size: 2.5rem;
+  }
+  .paragraph {
+    font-size: 0.7rem;
+  }
+  .storyLink {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .textBox {
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-sm);
+  }
+  .philosophyText {
+    font-size: 0.5rem;
+  }
+  .header {
+    font-size: 1.8rem;
+  }
+  .paragraph {
+    font-size: 0.5rem;
+  }
+  .storyLink {
+    font-size: 0.6rem;
   }
 }

@@ -140,6 +140,12 @@ a {
     outline: 2px solid var(--color-brown);
     outline-offset: 3px;
   }
+  &:active {
+    background-color: var(--color-accent);
+  }
+  &:visited {
+    background-color: var(--color-accent);
+  }
 }
 ul {
   list-style: none;

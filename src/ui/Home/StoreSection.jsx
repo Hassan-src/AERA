@@ -20,7 +20,10 @@ function StoreSection() {
         </div>
         <div className={styles.merchesMainBox}>
           {storeData.map((data) => (
-            <div className={styles.merches} key={data.id}>
+            <div
+              className={`${styles.merches} ${data.category === "Table" ? styles.table : ""}`}
+              key={data.id}
+            >
               <div className={styles.merchImageBox}>
                 <img
                   className={styles.merchImage}

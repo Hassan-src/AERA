@@ -19,7 +19,3 @@
     gap: var(--spacing-sm);
   }
 }
-@media only screen and (max-width: 680px) {
-}
-@media only screen and (max-width: 540px) {
-}

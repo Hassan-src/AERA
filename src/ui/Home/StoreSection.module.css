@@ -124,6 +124,11 @@
   right: 10%;
 }
 
+@media only screen and (width: 960px) and (height: 1440px) {
+  .merchesMainBox {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .header {
     padding: 0 5rem;
@@ -228,6 +233,7 @@
     font-size: 0.65rem;
   }
   .categoryBtn {
+    width: calc(100% - 65px);
     font-size: 0.8rem;
   }
   .buyNowBtn {
@@ -259,7 +265,8 @@
     gap: 2rem;
   }
   .merchDescription {
-    gap: var(--spacing-xsm);
+    gap: 0;
+    margin-bottom: var(--spacing-sm);
   }
   .merchTypeName {
     font-size: 0.5rem;
@@ -277,9 +284,167 @@
     font-size: 0.6rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 890px) {
+  .header {
+    padding: 0 2rem;
+  }
+  .merchesMainBox {
+    gap: 1.5rem;
+  }
+  .merches {
+    width: 230px;
+    height: 240px;
+    &::after {
+      width: 70px;
+      height: 70px;
+    }
+    &:last-child .merchImage {
+      width: 100px;
+    }
+  }
+  .merchImage {
+    width: 180px;
+  }
+  .merchDescription {
+    gap: 0;
+  }
+  .buyNowBtn {
+    width: 55px;
+    height: 55px;
+  }
+  .buyNowBtnImage {
+    width: 25px;
+  }
+  .categoryBtn {
+    width: calc(100% - 55px);
+  }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 750px) {
+  .header {
+    gap: 0;
+  }
+  .merchesMainBox {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: baseline;
+    padding-left: 8rem;
+    position: relative;
+  }
+  .table {
+    position: absolute;
+    right: 13%;
+  }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 710px) {
+  .merchesMainBox {
+    padding-left: 6rem;
+  }
+  .table {
+    right: 10%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .merchesMainBox {
+    padding-left: 2rem;
+  }
+  .table {
+    right: 8%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .header {
+    padding: 0 1.5rem;
+  }
+
+  .merches {
+    width: 190px;
+    height: 190px;
+    &::after {
+      width: 55px;
+      height: 55px;
+    }
+    &:last-child .merchImage {
+      width: 70px;
+    }
+  }
+  .merchImage {
+    width: 120px;
+  }
+  .merchDescription {
+    width: calc(100% - 40px);
+    padding: 0 0 0 var(--spacing-xsm);
+  }
+  .buyNowBtn {
+    width: 45px;
+    height: 45px;
+  }
+  .buyNowBtnImage {
+    width: 20px;
+  }
+  .categoryBtn {
+    width: calc(100% - 40px);
+    font-size: 0.5rem;
+  }
+  .categoryBtnArrow {
+    width: 4px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .merchesMainBox {
+    padding-left: 1.3rem;
+  }
+  .table {
+    right: 4%;
+  }
+  .merches {
+    width: 175px;
+    height: 190px;
+  }
+  .merchName {
+    font-size: 0.7rem;
+  }
+  .merchTypeName {
+    font-size: 0.4rem;
+  }
+  .merchPrice {
+    font-size: 0.5rem;
+  }
+  .merchPriceOnTop {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .merches {
+    width: 160px;
+    height: 190px;
+  }
+  .merchesMainBox {
+    padding-left: 0.4rem;
+  }
+  .table {
+    right: 2%;
+  }
+  .merchDescription {
+    width: calc(100% - 40px);
+    padding: 0 0 0 var(--spacing-xsm);
+  }
+}
+@media only screen and (max-width: 340px) {
+  .merches {
+    width: 140px;
+    height: 170px;
+  }
+  .merchesMainBox {
+    padding-left: 0.4rem;
+  }
+  .table {
+    right: 2%;
+  }
+  .merchDescription {
+    width: calc(100% - 40px);
+    padding: 0 0 0 var(--spacing-xsm);
+  }
 }

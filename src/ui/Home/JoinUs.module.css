@@ -28,7 +28,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: var(--spacing-sm);
+  padding: var(--spacing-lg);
   gap: var(--spacing-md);
 }
 .facilityImage {
@@ -42,7 +42,6 @@
 .facilityText {
   color: var(--color-text-secondary);
   font-size: 0.9rem;
-  width: 400px;
 }
 
 .joinUs {
