@@ -50,3 +50,81 @@
     color: var(--color-text-secondary);
   }
 }
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-lg);
+  }
+  .header {
+    font-size: 2.5rem;
+  }
+  .h2 {
+    font-size: 1.9rem;
+  }
+  .quote {
+    font-size: 0.9rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .unorderedList,
+  .orderedList {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  .header {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+  .backBtn {
+    margin-bottom: var(--spacing-xlg);
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .h2 {
+    font-size: 1.2rem;
+  }
+  .quote {
+    line-height: 1.8;
+  }
+  .text {
+    line-height: 1.8;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .header {
+    font-size: 1.2rem;
+  }
+  .h2 {
+    font-size: 0.9rem;
+  }
+  .quote {
+    font-size: 0.7rem;
+  }
+  .text {
+    font-size: 0.7rem;
+  }
+  .unorderedList,
+  .orderedList {
+    font-size: 0.7rem;
+  }
+}

@@ -26,85 +26,88 @@ function Footer() {
             href="https://github.com/Hassan-src"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit my github profile"
           >
-            <img className={styles.githubLogo} src={github} alt="github" />
+            <img className={styles.githubLogo} src={github} alt="" />
           </a>
         </div>
       </div>
-      <div className={styles.listBox}>
-        <span className={styles.listName}>Shop</span>
-        <ul className={styles.lists}>
-          <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
-              All products
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
-              sofas
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
-              tables
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/allproducts"}>
-              chairs
-            </Button>
-          </li>
-        </ul>
-      </div>
-      <div className={styles.listBox}>
-        <span className={styles.listName}>about</span>
-        <ul className={styles.lists}>
-          <li>
-            <Button className={styles.listChild} to={"/LearnOurStory"}>
-              our story
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/CraftsmanShip"}>
-              craftsmanship
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/Sustainability"}>
-              sustainability
-            </Button>
-          </li>
-        </ul>
-      </div>
-      <div className={styles.listBox}>
-        <span className={styles.listName}>support</span>
-        <ul className={styles.lists}>
-          <li>
-            <Button className={styles.listChild} to={"/FAQ"}>
-              FAQ
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/Shipping & returns"}>
-              Shipping & returns
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/Care Instructions"}>
-              care instructions
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/Warranty"}>
-              warranty
-            </Button>
-          </li>
-          <li>
-            <Button className={styles.listChild} to={"/ContactUs"}>
-              contact us
-            </Button>
-          </li>
-        </ul>
+      <div className={styles.listingMain}>
+        <div className={styles.listBox}>
+          <span className={styles.listName}>Shop</span>
+          <ul className={styles.lists}>
+            <li>
+              <Button className={styles.listChild} to={"/allproducts"}>
+                All products
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/allproducts"}>
+                sofas
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/allproducts"}>
+                tables
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/allproducts"}>
+                chairs
+              </Button>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.listBox}>
+          <span className={styles.listName}>about</span>
+          <ul className={styles.lists}>
+            <li>
+              <Button className={styles.listChild} to={"/LearnOurStory"}>
+                our story
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/CraftsmanShip"}>
+                craftsmanship
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/Sustainability"}>
+                sustainability
+              </Button>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.listBox}>
+          <span className={styles.listName}>support</span>
+          <ul className={styles.lists}>
+            <li>
+              <Button className={styles.listChild} to={"/FAQ"}>
+                FAQ
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/Shipping & returns"}>
+                Shipping & returns
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/Care Instructions"}>
+                care instructions
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/Warranty"}>
+                warranty
+              </Button>
+            </li>
+            <li>
+              <Button className={styles.listChild} to={"/ContactUs"}>
+                contact us
+              </Button>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className={styles.promises}>
         <div className={styles.promise}>

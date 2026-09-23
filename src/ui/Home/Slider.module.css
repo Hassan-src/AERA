@@ -49,3 +49,36 @@
     transform: translateX(-50%);
   }
 }
+@media only screen and (max-width: 1200px) {
+  .listedTexts {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .listedTexts {
+    font-size: 0.7rem;
+    &::after {
+      margin-left: var(--spacing-md);
+    }
+    &:last-child {
+      margin-right: var(--spacing-md);
+    }
+  }
+  .sliderList {
+    gap: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 430px) {
+  .listedTexts {
+    font-size: 0.6rem;
+    &::after {
+      margin-left: var(--spacing-sm);
+    }
+    &:last-child {
+      margin-right: var(--spacing-sm);
+    }
+  }
+  .sliderList {
+    gap: var(--spacing-sm);
+  }
+}

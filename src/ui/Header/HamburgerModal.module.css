@@ -27,3 +27,27 @@
 .btnImage {
   width: 20px;
 }
+@media only screen and (max-width: 680px) {
+  .modal {
+    top: 65px;
+  }
+  .btns {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .modal {
+    padding: var(--spacing-xsm);
+  }
+  .btns {
+    font-size: 0.8rem;
+  }
+  .btnImage {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .btns {
+    font-size: 0.8rem;
+  }
+}

@@ -58,12 +58,207 @@
   color: var(--color-text-secondary);
 }
 .joinUsForm {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-md);
 }
 .joinUsInput {
-  width: 500px;
-  height: 45px;
+  max-width: 500px;
+  min-width: 200px;
+  max-height: 45px;
   background-color: var(--color-bg);
+}
+@media only screen and (max-width: 1100px) {
+  .facilitiesList {
+    gap: 4rem;
+  }
+  .facility {
+    padding: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 980px) {
+  .facilitiesList {
+    gap: 3rem;
+  }
+  .facility {
+    padding: var(--spacing-sm);
+  }
+}
+@media only screen and (max-width: 880px) {
+  .facilitiesList {
+    gap: 2rem;
+  }
+  .facilityImage {
+    width: 40px;
+  }
+  .facilityHeader {
+    font-size: 1.1rem;
+  }
+  .facilityText {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 793px) {
+  .facilitiesList {
+    gap: 1rem;
+  }
+  .facility {
+    padding: var(--spacing-xsm);
+  }
+  .facilityImage {
+    width: 35px;
+  }
+  .facilityHeader {
+    font-size: 1.1rem;
+  }
+  .facilityText {
+    font-size: 0.8rem;
+  }
+  .joinUsHeader {
+    font-size: 2rem;
+  }
+  .joinUsText {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .facilityHeader {
+    font-size: 1rem;
+  }
+  .facilityText {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .facilitiesList {
+    gap: 0;
+  }
+  .facility {
+    gap: var(--spacing-sm);
+  }
+  .facilityHeader {
+    font-size: 0.9rem;
+  }
+  .facilityText {
+    font-size: 0.7rem;
+  }
+  .joinUsHeader {
+    font-size: 1.8rem;
+  }
+  .joinUsText {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .joinUsBtn {
+    width: fit-content;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 588px) {
+  .facility {
+    gap: var(--spacing-xsm);
+  }
+  .facilityHeader {
+    font-size: 0.8rem;
+  }
+  .facilityText {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .facilitiesList {
+    flex-direction: column;
+  }
+  .facility {
+    width: 100%;
+    gap: 0;
+  }
+  .facilityImage {
+    width: 30px;
+  }
+  .facilityHeader {
+    font-size: 0.7rem;
+  }
+  .facilityText {
+    font-size: 0.6rem;
+  }
+  .joinUsHeader {
+    font-size: 1.5rem;
+  }
+  .joinUsText {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 var(--spacing-sm);
+  }
+  .joinUsBtn {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .facilityHeader {
+    font-size: 0.6rem;
+  }
+  .facilityText {
+    font-size: 0.5rem;
+  }
+  .facilityImage {
+    margin-bottom: 0;
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .facilityHeader {
+    font-size: 0.55rem;
+  }
+  .facilityText {
+    line-height: 1.1;
+  }
+  .facilityImage {
+    margin-bottom: 0;
+    width: 15px;
+  }
+  .joinUs {
+    gap: var(--spacing-md);
+  }
+  .joinUsHeader {
+    font-size: 1.2rem;
+  }
+  .joinUsText {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .joinUsInput {
+    font-size: 0.8rem;
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 340px) {
+  .facilityHeader {
+    font-size: 0.5rem;
+  }
+  .facilityText {
+    font-size: 0.4rem;
+    line-height: 1.1;
+  }
+  .joinUsHeader {
+    font-size: 0.9rem;
+  }
+  .joinUsText {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .joinUsBtn {
+    font-size: 0.7rem;
+  }
+  .joinUsInput {
+    font-size: 0.7rem;
+    &::placeholder {
+      font-size: 0.7rem;
+    }
+  }
 }

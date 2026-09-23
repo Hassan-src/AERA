@@ -44,7 +44,7 @@ function Warranty() {
         our team with:
       </p>
       <br />
-      <ol className={styles.unorderedList}>
+      <ol className={styles.orderedList}>
         <li>Your order number</li>
         <li>A description of the issue</li>
         <li>Photographs showing the affected area</li>

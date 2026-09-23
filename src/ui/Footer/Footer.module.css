@@ -3,7 +3,7 @@
   display: flex;
   background-color: var(--color-darkest);
   justify-content: space-evenly;
-  padding: 5rem;
+  padding: 4rem;
 }
 .company {
   height: 100%;
@@ -34,6 +34,10 @@
 .gitHubLink {
   display: flex;
   align-items: center;
+}
+.listingMain {
+  display: flex;
+  gap: 5rem;
 }
 .listBox {
   display: flex;
@@ -74,4 +78,166 @@
   text-transform: capitalize;
   font-size: 0.9rem;
   color: var(--color-accent-light);
+}
+@media only screen and (max-width: 1300px) {
+  .listingMain {
+    gap: var(--spacing-lg);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer {
+    padding: var(--spacing-xlg);
+  }
+  .companySlogan {
+    font-size: 0.8rem;
+  }
+  .listingMain {
+    gap: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .footer {
+    padding: var(--spacing-xlg) var(--spacing-lg);
+  }
+  .listingMain {
+    gap: var(--spacing-sm);
+  }
+  .listChild {
+    font-size: 0.9rem;
+  }
+  .listName {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .footer {
+    padding: var(--spacing-xlg) var(--spacing-md);
+  }
+  .listChild {
+    font-size: 0.8rem;
+  }
+  .listName {
+    font-size: 0.8rem;
+  }
+  .promiseText {
+    font-size: 0.8rem;
+  }
+  .listBox {
+    gap: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  .companySlogan {
+    font-size: 0.7rem;
+  }
+  .listChild {
+    font-size: 0.7rem;
+  }
+  .listName {
+    font-size: 0.7rem;
+  }
+  .promiseText {
+    font-size: 0.7rem;
+  }
+  .logo {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .footer {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .companySlogan {
+    font-size: 0.9rem;
+  }
+  .listingMain {
+    width: 100%;
+    gap: var(--spacing-xlg);
+    padding: var(--spacing-lg);
+  }
+  .listChild {
+    font-size: 0.9rem;
+  }
+  .listName {
+    font-size: 0.9rem;
+  }
+  .promiseText {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .footer {
+    padding-bottom: 5rem;
+    gap: var(--spacing-md);
+  }
+  .company {
+    gap: var(--spacing-md);
+  }
+  .logo {
+    width: 30px;
+  }
+  .companySlogan {
+    font-size: 0.7rem;
+  }
+  .listingMain {
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+  .listChild {
+    font-size: 0.7rem;
+  }
+  .listName {
+    font-size: 0.7rem;
+  }
+  .promiseText {
+    font-size: 0.7rem;
+  }
+  .listBox {
+    gap: var(--spacing-sm);
+  }
+  .lists {
+    gap: var(--spacing-xsm);
+  }
+  .promises {
+    gap: var(--spacing-xsm);
+  }
+  .promiseImage {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .listingMain {
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 380px) {
+  .listingMain {
+    gap: 0.9rem;
+    padding: var(--spacing-sm);
+  }
+}
+@media only screen and (max-width: 340px) {
+  .logo {
+    width: 30px;
+  }
+  .companySlogan {
+    font-size: 0.6rem;
+  }
+  .listChild {
+    font-size: 0.6rem;
+  }
+  .listName {
+    font-size: 0.6rem;
+  }
+  .promiseText {
+    font-size: 0.6rem;
+  }
 }

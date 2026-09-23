@@ -8,11 +8,12 @@
 }
 
 .documentLinks {
-  height: calc(100dvh - 80px);
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   padding: var(--spacing-lg);
   gap: var(--spacing-lg);
+  border-right: 1px solid var(--color-border);
 }
 .links {
   display: flex;
@@ -78,5 +79,160 @@
   &:hover {
     box-shadow: none;
     color: var(--color-text-secondary);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-lg);
+  }
+  .header {
+    font-size: 2.5rem;
+  }
+  .documentLinks {
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+    font-size: 0.9rem;
+  }
+  .links {
+    gap: var(--spacing-md);
+  }
+  .h2 {
+    font-size: 1.9rem;
+  }
+  .h3 {
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-md);
+  }
+  .h4 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-md);
+  }
+  .quote {
+    font-size: 0.9rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .emText {
+    font-size: 0.9rem;
+  }
+  .unorderedList,
+  .orderedList {
+    font-size: 0.9rem;
+  }
+  .contactAera {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  .header {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+  }
+  .h4 {
+    font-size: 1rem;
+  }
+
+  .backBtn {
+    margin-bottom: var(--spacing-xlg);
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .documentLinks {
+    padding: var(--spacing-sm);
+    font-size: 0.8rem;
+  }
+  .h2 {
+    font-size: 1.2rem;
+  }
+  .h3 {
+    font-size: 1.1rem;
+  }
+  .h4 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  .quote {
+    line-height: 1.8;
+  }
+  .text {
+    line-height: 1.8;
+  }
+  .emText {
+    line-height: 1.8;
+  }
+  .backBtn {
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.8rem;
+  }
+  .contactAera {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .documentLinks {
+    font-size: 0.5rem;
+    line-height: 1.8;
+  }
+  .arrowImage {
+    width: 4px;
+  }
+  .header {
+    font-size: 1.1rem;
+  }
+  .h2 {
+    font-size: 0.8rem;
+  }
+  .h3 {
+    font-size: 0.75rem;
+  }
+  .h4 {
+    font-size: 0.7rem;
+  }
+  .quote {
+    font-size: 0.6rem;
+  }
+  .text {
+    font-size: 0.6rem;
+  }
+  .emText {
+    font-size: 0.6rem;
+  }
+  .unorderedList,
+  .orderedList {
+    font-size: 0.6rem;
+  }
+  .linkToPages {
+    font-size: 0.6rem;
+  }
+  .contactAera {
+    font-size: 0.6rem;
+  }
+  .backBtn {
+    margin-bottom: var(--spacing-md);
+    font-size: 0.7rem;
   }
 }
