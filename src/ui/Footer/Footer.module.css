@@ -189,6 +189,7 @@
   .listingMain {
     gap: var(--spacing-lg);
     padding: var(--spacing-lg);
+    padding-left: 0;
   }
   .listChild {
     font-size: 0.7rem;
@@ -214,17 +215,21 @@
 }
 @media only screen and (max-width: 450px) {
   .listingMain {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-lg);
     padding: 0 var(--spacing-md);
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 380px) {
   .listingMain {
-    gap: 0.9rem;
     padding: var(--spacing-sm);
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 340px) {
+  .listingMain {
+    gap: var(--spacing-md);
+  }
   .logo {
     width: 30px;
   }

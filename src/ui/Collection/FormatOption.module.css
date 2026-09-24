@@ -1,0 +1,44 @@
+.selectorListOpenerImage {
+  width: 6px;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(7%) saturate(1775%)
+    hue-rotate(320deg) brightness(93%) contrast(92%);
+}
+.selectorBox {
+  background-color: var(--color-bg);
+  position: relative;
+}
+.selectorListOpener {
+  width: 150px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xsm);
+  border: 2px solid var(--color-dark);
+}
+.isActive {
+  .selectorListOpenerImage {
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(90deg);
+  }
+}
+.selector {
+  width: 150px;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--border-radius);
+}
+.selectorOptions {
+  text-transform: capitalize;
+  padding: var(--spacing-sm);
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-dark);
+  }
+}

@@ -24,6 +24,7 @@
   --color-darkest: #140d0a;
   /* Furniture */
   --color-brown: #65412f;
+  --color-brown-light: rgb(101, 65, 47, 0.4);
   --color-brown-muted: #766255;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(49, 36, 34, 0.8) 0 0px 10px -1px;
@@ -141,10 +142,10 @@ a {
     outline-offset: 3px;
   }
   &:active {
-    background-color: var(--color-accent);
+    background-color: var(--color-brown-light);
   }
   &:visited {
-    background-color: var(--color-accent);
+    background-color: var(--color-brown-light);
   }
 }
 ul {
@@ -166,6 +167,24 @@ input {
     outline-offset: 2px;
   }
 }
+select {
+  font-family: var(--font);
+  font-size: var(--p-text-size);
+  font-weight: var(--p-text-weight);
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-dark);
+  border-radius: var(--border-radius);
+  &:focus {
+    outline: 2px solid var(--color-brown);
+    outline-offset: 2px;
+  }
+  &:active {
+    background-color: var(--color-brown-light);
+  }
+}
 ::-webkit-scrollbar {
   background-color: var(--color-bg);
 }
@@ -174,5 +193,5 @@ input {
   border-radius: var(--border-radius);
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }

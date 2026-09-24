@@ -6,7 +6,6 @@ import HamburgerModal from "./HamburgerModal";
 
 function HamburgerBtn() {
   const [hamOpener, setHamOpener] = useState(false);
-  console.log(hamOpener);
   return (
     <>
       <Button

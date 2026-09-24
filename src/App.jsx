@@ -10,6 +10,7 @@ import ShippingReturns from "./pages/Shipping & returns/Shipping&Returns";
 import CareInstructions from "./pages/Care Instructions/CareInstructions";
 import ContactUs from "./pages/Contact Us/ContactUs";
 import Warranty from "./pages/Warranty/Warranty";
+import Collection from "./pages/Collection/Collection";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/Warranty",
         element: <Warranty />,
+      },
+      {
+        path: "/Collection",
+        element: <Collection />,
       },
     ],
   },
