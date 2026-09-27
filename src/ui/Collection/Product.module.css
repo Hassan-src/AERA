@@ -1,0 +1,69 @@
+.main {
+  width: fit-content;
+  height: fit-content;
+  border-radius: var(--border-radius);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+}
+
+.productInfoBox {
+  width: 100%;
+}
+
+.productInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  gap: var(--spacing-lg);
+}
+
+.productCategoryName {
+  padding: var(--spacing-xsm) var(--spacing-sm);
+  text-transform: uppercase;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.productName {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.priceBtnBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productPriceOnTop {
+  font-size: 0.8rem;
+}
+
+.btnOpen {
+  background: var(--color-accent-dark);
+  padding: var(--spacing-xsm) var(--spacing-sm);
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.35rem;
+  font-size: 0.9rem;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  &:hover {
+    color: var(--color-accent-dark);
+    background-color: var(--color-darkest);
+  }
+}

@@ -1,8 +1,6 @@
-import { useState } from "react";
-import Button from "../Button";
 import styles from "./FormatListing.module.css";
 
-function FormatListing({ arrayName, children }) {
+function FormatListing({ children }) {
   return (
     <div className={styles.main}>
       <form

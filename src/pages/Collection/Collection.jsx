@@ -22,7 +22,9 @@ function Collection() {
           setSelectorValue={setSelectorValue}
         />
       </FormatListing>
-      <Product />
+      <div className={styles.productList}>
+        <Product />
+      </div>
     </div>
   );
 }

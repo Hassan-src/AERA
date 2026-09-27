@@ -1,12 +1,13 @@
 .main {
-  border: 3px solid magenta;
   width: 100%;
   height: 8dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid var(--color-border);
 }
 .selectorsForm {
   display: flex;
+  align-items: center;
   justify-content: center;
 }

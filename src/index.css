@@ -144,9 +144,6 @@ a {
   &:active {
     background-color: var(--color-brown-light);
   }
-  &:visited {
-    background-color: var(--color-brown-light);
-  }
 }
 ul {
   list-style: none;

@@ -1,4 +1,10 @@
 .main {
-  border: 3px solid red;
   width: 100%;
+}
+.productList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: var(--spacing-xlg);
+  gap: var(--spacing-xlg);
 }
