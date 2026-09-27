@@ -8,3 +8,6 @@
   padding: var(--spacing-xlg);
   gap: var(--spacing-xlg);
 }
+.filterName {
+  text-transform: capitalize;
+}

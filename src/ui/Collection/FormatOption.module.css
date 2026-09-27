@@ -7,7 +7,6 @@
   width: 100%;
   background-color: var(--color-bg);
   display: flex;
-  align-items: center;
   position: relative;
 }
 .selectorListOpener {
@@ -18,6 +17,10 @@
   color: var(--color-text);
   margin-bottom: var(--spacing-xsm);
   border: 2px solid var(--color-dark);
+  &:hover .selectorListOpenerImage {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(48%) saturate(452%)
+      hue-rotate(356deg) brightness(87%) contrast(89%);
+  }
 }
 .isActive {
   .selectorListOpenerImage {
@@ -34,6 +37,7 @@
   border: 2px solid var(--color-dark);
   border-radius: var(--border-radius);
   z-index: 999;
+  top: 50px;
 }
 .selectorOptions {
   text-transform: capitalize;

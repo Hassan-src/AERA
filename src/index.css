@@ -115,16 +115,22 @@ button {
   align-items: center;
   justify-content: center;
   padding: var(--spacing-sm);
-  background-color: var(--color-dark);
+  background: var(--color-accent-dark);
   font-family: var(--font);
   font-size: var(--p-text-size);
-  color: var(--color-text-light);
+  color: var(--color-text);
   border: none;
-  transition: box-shadow 0.2s ease-in-out;
+  transition:
+    box-shadow 0.2s ease-out,
+    color 0.2s ease-out,
+    background-color 0.2s ease-out,
+    filter 0.2s ease-out;
   border-radius: var(--border-radius);
   &:hover {
     cursor: pointer;
     box-shadow: var(--shadow);
+    color: var(--color-accent-dark);
+    background-color: var(--color-darkest);
   }
 }
 a {
@@ -132,7 +138,7 @@ a {
   text-transform: capitalize;
   font-family: var(--font);
   color: var(--color-text);
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-out;
   border-radius: var(--border-radius);
   &:hover {
     color: var(--color-text-secondary);

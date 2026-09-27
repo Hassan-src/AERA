@@ -3,6 +3,7 @@ import FormatListing from "../../ui/Collection/FormatListing";
 import FormatOption from "../../ui/Collection/FormatOption";
 import Product from "../../ui/Collection/Product";
 import styles from "./Collection.module.css";
+import Button from "../../ui/Button";
 
 function Collection() {
   const [selectorValue, setSelectorValue] = useState("");
@@ -17,6 +18,12 @@ function Collection() {
   return (
     <div className={styles.main}>
       <FormatListing>
+        <span className={styles.filterName}>Categories:</span>
+        <FormatOption
+          arrayName={categories}
+          setSelectorValue={setSelectorValue}
+        />
+        <span className={styles.filterName}>Pricing:</span>
         <FormatOption
           arrayName={categories}
           setSelectorValue={setSelectorValue}
