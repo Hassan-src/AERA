@@ -68,7 +68,7 @@ function CareInstructions() {
         you find the appropriate care method for your AERA piece.
       </p>
       <br />
-      <Button className={styles.linkToPages} to={"/ContactUs"}>
+      <Button className={styles.linkToPages} to={"/contact-us"}>
         Contact Us
       </Button>
       <br />

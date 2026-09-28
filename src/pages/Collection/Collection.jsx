@@ -1,9 +1,9 @@
 import { useState } from "react";
 import FormatListing from "../../ui/Collection/FormatListing";
 import FormatOption from "../../ui/Collection/FormatOption";
-import Product from "../../ui/Collection/Product";
+import ProductCard from "../../ui/Collection/ProductCard";
+
 import styles from "./Collection.module.css";
-import Button from "../../ui/Button";
 
 function Collection() {
   const [selectorValue, setSelectorValue] = useState("");
@@ -30,7 +30,7 @@ function Collection() {
         />
       </FormatListing>
       <div className={styles.productList}>
-        <Product />
+        <ProductCard />
       </div>
     </div>
   );

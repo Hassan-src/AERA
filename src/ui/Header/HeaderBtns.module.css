@@ -14,6 +14,9 @@
 }
 .btnImage {
   width: 20px;
+  filter: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(925%)
+    hue-rotate(333deg) brightness(94%) contrast(99%);
+  transition: filter 0.2s ease-out;
 }
 
 @media only screen and (max-width: 800px) {

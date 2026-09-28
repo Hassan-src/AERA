@@ -1,13 +1,17 @@
-import Button from "../Button";
-import styles from "./Product.module.css";
+import Button from "../Button.jsx";
+import styles from "./ProductCard.module.css";
 import { products } from "../../data/products.js";
-function Product() {
+function ProductCard() {
   return (
     <>
       {products.map((data) => (
         <div className={styles.main} key={data.id}>
           <div className={styles.productImageBox}>
-            <img className={styles.productImage} src={data.imageMain} alt="" />
+            <img
+              className={styles.productImage}
+              src={data.imageMain}
+              alt={data.name}
+            />
           </div>
           <div className={styles.productInfoBox}>
             <span className={styles.productCategoryName}>{data.category}</span>
@@ -18,7 +22,7 @@ function Product() {
                   ${data.price}
                   <span className={styles.productPriceOnTop}>.99</span>
                 </span>
-                <Button className={styles.btnOpen} to={"/"}>
+                <Button className={styles.btnOpen} to={`/product/${data.id}`}>
                   view product &rarr;
                 </Button>
               </div>
@@ -30,4 +34,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default ProductCard;

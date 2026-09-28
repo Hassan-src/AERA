@@ -104,10 +104,23 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent-dark);
   position: absolute;
   bottom: -8px;
   right: -8px;
   z-index: 2;
+  transition:
+    box-shadow 0.2s ease-out,
+    color 0.2s ease-out,
+    background-color 0.2s ease-out;
+  &:hover {
+    box-shadow: var(--shadow);
+    color: var(--color-accent-dark);
+    background-color: var(--color-darkest);
+  }
   &:hover .buyNowBtnImage {
     filter: brightness(0) saturate(100%) invert(73%) sepia(48%) saturate(452%)
       hue-rotate(356deg) brightness(87%) contrast(89%);
@@ -115,17 +128,27 @@
 }
 .buyNowBtnImage {
   width: 35px;
+  filter: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(925%)
+    hue-rotate(333deg) brightness(94%) contrast(99%);
+  transition: filter 0.2s ease-out;
 }
 .categoryBtn {
   width: calc(100% - 85px);
   border-bottom-left-radius: 25px;
   padding: var(--spacing-xsm);
   position: relative;
+  &:hover .categoryBtnArrow {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(48%) saturate(452%)
+      hue-rotate(356deg) brightness(87%) contrast(89%);
+  }
 }
 .categoryBtnArrow {
   width: 6px;
   position: absolute;
   right: 10%;
+  filter: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(925%)
+    hue-rotate(333deg) brightness(94%) contrast(99%);
+  transition: filter 0.2s ease-out;
 }
 
 @media only screen and (width: 960px) and (height: 1440px) {

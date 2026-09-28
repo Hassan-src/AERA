@@ -62,17 +62,17 @@ function Footer() {
           <span className={styles.listName}>about</span>
           <ul className={styles.lists}>
             <li>
-              <Button className={styles.listChild} to={"/LearnOurStory"}>
+              <Button className={styles.listChild} to={"/learn-our-story"}>
                 our story
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/CraftsmanShip"}>
+              <Button className={styles.listChild} to={"/craftsman-ship"}>
                 craftsmanship
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/Sustainability"}>
+              <Button className={styles.listChild} to={"/sustainability"}>
                 sustainability
               </Button>
             </li>
@@ -82,27 +82,27 @@ function Footer() {
           <span className={styles.listName}>support</span>
           <ul className={styles.lists}>
             <li>
-              <Button className={styles.listChild} to={"/FAQ"}>
+              <Button className={styles.listChild} to={"/faq"}>
                 FAQ
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/Shipping & returns"}>
+              <Button className={styles.listChild} to={"/shipping-&-returns"}>
                 Shipping & returns
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/Care Instructions"}>
+              <Button className={styles.listChild} to={"/care-instructions"}>
                 care instructions
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/Warranty"}>
+              <Button className={styles.listChild} to={"/warranty"}>
                 warranty
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/ContactUs"}>
+              <Button className={styles.listChild} to={"/contact-us"}>
                 contact us
               </Button>
             </li>

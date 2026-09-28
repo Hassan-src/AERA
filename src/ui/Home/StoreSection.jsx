@@ -41,7 +41,7 @@ function StoreSection() {
                   </span>
                 </div>
               </div>
-              <Button className={styles.buyNowBtn}>
+              <Button className={styles.buyNowBtn} to={`/product/${data.id}`}>
                 <img className={styles.buyNowBtnImage} src={cart} alt="cart" />
               </Button>
               <Button className={styles.categoryBtn}>

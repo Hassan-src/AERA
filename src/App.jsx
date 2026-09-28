@@ -11,6 +11,7 @@ import CareInstructions from "./pages/Care Instructions/CareInstructions";
 import ContactUs from "./pages/Contact Us/ContactUs";
 import Warranty from "./pages/Warranty/Warranty";
 import Collection from "./pages/Collection/Collection";
+import Product from "./pages/Product/Product";
 
 const router = createBrowserRouter([
   {
@@ -21,40 +22,44 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/LearnOurStory",
+        path: "/learn-our-story",
         element: <LearnOurStory />,
       },
       {
-        path: "/CraftsmanShip",
+        path: "/craftsman-ship",
         element: <CraftsmanShip />,
       },
       {
-        path: "/Sustainability",
+        path: "/sustainability",
         element: <Sustainability />,
       },
       {
-        path: "/FAQ",
+        path: "/faq",
         element: <FAQ />,
       },
       {
-        path: "/Shipping & Returns",
+        path: "/shipping-&-returns",
         element: <ShippingReturns />,
       },
       {
-        path: "/ContactUs",
+        path: "/contact-us",
         element: <ContactUs />,
       },
       {
-        path: "/Care Instructions",
+        path: "/care-instructions",
         element: <CareInstructions />,
       },
       {
-        path: "/Warranty",
+        path: "/warranty",
         element: <Warranty />,
       },
       {
-        path: "/Collection",
+        path: "/collection",
         element: <Collection />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product />,
       },
     ],
   },

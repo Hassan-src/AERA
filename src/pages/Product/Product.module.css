@@ -1,0 +1,49 @@
+.main {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+}
+.imageSide {
+  width: 50%;
+  height: 100%;
+  padding: var(--spacing-md);
+  border-right: 1px solid var(--color-border);
+}
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.productInfoSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-xlg);
+  padding: var(--spacing-lg);
+}
+.productType {
+  color: var(--color-accent-darkest);
+}
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.productPriceOnTop {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.addToCartBtnImage {
+  width: 20px;
+  filter: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(925%)
+    hue-rotate(333deg) brightness(94%) contrast(99%);
+  transition: filter 0.2s ease-out;
+}
+.addToCartBtn {
+  gap: var(--spacing-sm);
+  &:hover .addToCartBtnImage {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(48%) saturate(452%)
+      hue-rotate(356deg) brightness(87%) contrast(89%);
+  }
+}

@@ -19,7 +19,7 @@ function OurStory() {
           Every peice is handcrafted with sustainable materials and traditional
           techniques, designed to age beautifully with you.
         </p>
-        <Button className={styles.storyLink} to={"./LearnOurStory"}>
+        <Button className={styles.storyLink} to={"./learn-our-story"}>
           Learn our story
         </Button>
       </div>

@@ -40,10 +40,10 @@ function ContactUs() {
       </p>
       <br />
       <div className={styles.linkToPagesBox}>
-        <Button className={styles.linkToPages} to={"/Care Instructions"}>
+        <Button className={styles.linkToPages} to={"/care-instructions"}>
           Care Instructions Page
         </Button>
-        <Button className={styles.linkToPages} to={"/Warranty"}>
+        <Button className={styles.linkToPages} to={"/warranty"}>
           Warranty Page
         </Button>
       </div>
@@ -56,7 +56,7 @@ function ContactUs() {
       <br />
       <h2 className={styles.h2}>Get in Touch</h2>
       <span>
-        <b>Email:</b>{" "}
+        <b>Email:</b>
         <a className={`${styles.linkToPages} ${styles.email}`} href="">
           support@aera.com
         </a>
