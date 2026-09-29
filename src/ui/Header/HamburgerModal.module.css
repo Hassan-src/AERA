@@ -5,7 +5,6 @@
   background-color: var(--color-bg);
   border: 2px solid var(--color-darkest);
   border-radius: var(--border-radius);
-  padding: var(--spacing-sm);
   position: absolute;
   right: 0;
   top: 80px;
@@ -19,9 +18,23 @@
   background-color: transparent;
   color: var(--color-text);
   gap: var(--spacing-md);
+  padding: var(--spacing-sm);
   &:not(:last-child) {
     border-bottom: 2px solid var(--color-darkest);
     border-radius: 0;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+}
+.btnLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.1;
+  &:hover {
+    box-shadow: var(--shadow);
+    color: var(--color-accent-dark);
   }
 }
 .btnImage {

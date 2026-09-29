@@ -12,10 +12,15 @@ import ContactUs from "./pages/Contact Us/ContactUs";
 import Warranty from "./pages/Warranty/Warranty";
 import Collection from "./pages/Collection/Collection";
 import Product from "./pages/Product/Product";
+import Error from "./ui/Error/Error";
+import Profile from "./pages/Profile/Profile";
+import { profileLoader } from "./utils/ProfileLoader";
+import { action as createAccountAction } from "./utils/ProfileAction";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -60,6 +65,12 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+        loader: profileLoader,
+        action: createAccountAction,
       },
     ],
   },

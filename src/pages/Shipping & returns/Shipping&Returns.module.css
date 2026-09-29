@@ -79,6 +79,7 @@
   &:hover {
     box-shadow: none;
     color: var(--color-text-secondary);
+    background-color: transparent;
   }
 }
 

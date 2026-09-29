@@ -47,18 +47,9 @@ function JoinUs() {
           Subscribe for new collections, design stories, and considered pieces
           for your space.
         </span>
-        <form
-          className={styles.joinUsForm}
-          onChange={(e) => e.preventDefault()}
-        >
-          <input
-            className={styles.joinUsInput}
-            type="text"
-            id="name"
-            placeholder="Enter your name"
-          />
-          <Button className={styles.joinUsBtn}>Subscribe</Button>
-        </form>
+        <Button className={styles.joinUsBtn} to={"/profile"}>
+          Subscribe
+        </Button>
       </div>
     </div>
   );

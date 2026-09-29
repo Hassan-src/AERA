@@ -1,0 +1,40 @@
+.main {
+  width: 600px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--color-accent-darkest);
+  border-radius: var(--border-radius);
+  background-color: var(--color-accent-lightest);
+  gap: var(--spacing-xlg);
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.message {
+  font-size: 2rem;
+  letter-spacing: 10px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  background: var(--color-accent-dark);
+  transition:
+    box-shadow 0.2s ease-out,
+    color 0.2s ease-out,
+    background-color 0.2s ease-out,
+    filter 0.2s ease-out;
+  border-radius: var(--border-radius);
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    color: var(--color-accent-dark);
+    background-color: var(--color-darkest);
+  }
+}

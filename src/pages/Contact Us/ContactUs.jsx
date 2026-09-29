@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import styles from "./ContactUs.module.css";
 function ContactUs() {
+  const navigate = useNavigate();
   return (
     <div className={styles.main}>
-      <Button className={styles.backBtn} to={"/"}>
+      <Button className={styles.backBtn} onClick={() => navigate(-1)}>
         &larr; Back
       </Button>
       <h1 className={styles.header}>Contact Us</h1>

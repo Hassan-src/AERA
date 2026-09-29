@@ -23,8 +23,18 @@
   gap: var(--spacing-xlg);
   padding: var(--spacing-lg);
 }
+.productCategory {
+  font-size: 0.8rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
 .productType {
   color: var(--color-accent-darkest);
+}
+.productDescription {
+  max-width: 700px;
+  line-height: 1.7;
 }
 .productPrice {
   font-size: 1.2rem;
@@ -41,9 +51,26 @@
   transition: filter 0.2s ease-out;
 }
 .addToCartBtn {
+  height: 48px;
   gap: var(--spacing-sm);
   &:hover .addToCartBtnImage {
     filter: brightness(0) saturate(100%) invert(73%) sepia(48%) saturate(452%)
       hue-rotate(356deg) brightness(87%) contrast(89%);
+  }
+}
+.backBtn {
+  width: fit-content;
+  background-color: transparent;
+  margin-bottom: 4rem;
+  color: var(--color-text);
+  margin-right: auto;
+  transition: color 0.2s ease-in-out;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  &:hover {
+    box-shadow: none;
+    color: var(--color-text-secondary);
+    background-color: transparent;
   }
 }

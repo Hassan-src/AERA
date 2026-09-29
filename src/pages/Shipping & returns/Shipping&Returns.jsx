@@ -5,8 +5,10 @@ import Button from "../../ui/Button";
 import styles from "./Shipping&Returns.module.css";
 
 import arrow from "../../assets/svgs/Arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 
 function ShippingReturns() {
+  const navigate = useNavigate();
   const sectionsRef = useRef({});
   const handleScroll = (id) => {
     sectionsRef.current[id].scrollIntoView({
@@ -18,7 +20,7 @@ function ShippingReturns() {
   return (
     <>
       <aside className={styles.documentLinks}>
-        <Button className={styles.backBtn} to={"/"}>
+        <Button className={styles.backBtn} onClick={() => navigate(-1)}>
           &larr; Back
         </Button>
         {documentLinks.map((links) => (

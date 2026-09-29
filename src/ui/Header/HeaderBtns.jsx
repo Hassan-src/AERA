@@ -12,7 +12,7 @@ function HeaderBtns() {
       <Button className={styles.btns}>
         <img className={styles.btnImage} src={search} alt="search" />
       </Button>
-      <Button className={styles.btns}>
+      <Button className={`${styles.btns} ${styles.btnLink}`} to={"/profile"}>
         <img className={styles.btnImage} src={profile} alt="profile" />
       </Button>
       <Button className={styles.btns}>

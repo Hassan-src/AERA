@@ -1,0 +1,132 @@
+.main {
+  width: 100%;
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xlg);
+}
+.mainBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+.leftSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--color-border);
+  padding: var(--spacing-xlg);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: -25%;
+    left: -25%;
+    background: radial-gradient(
+      circle,
+      rgba(212, 167, 89, 0.55) 0%,
+      rgba(232, 208, 167, 0.32) 30%,
+      rgba(232, 208, 167, 0.12) 55%,
+      transparent 75%
+    );
+    filter: blur(45px);
+    animation: moveGradient 8s ease-in-out infinite alternate;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    right: -25%;
+    bottom: -25%;
+    background: radial-gradient(
+      circle,
+      rgba(118, 98, 85, 0.22) 0%,
+      rgba(212, 167, 89, 0.18) 35%,
+      transparent 70%
+    );
+    filter: blur(55px);
+    animation: moveGradientTwo 11s ease-in-out infinite alternate;
+    z-index: -1;
+  }
+}
+.rightSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xlg);
+}
+.profileForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.inputGroup label {
+  width: 130px;
+}
+
+.inputGroup input {
+  width: 500px;
+  height: 42px;
+  padding: 0 var(--spacing-sm);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  &:focus {
+    border-color: var(--color-accent-dark);
+  }
+}
+
+.submitBtn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  margin-left: auto;
+}
+
+@keyframes moveGradient {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(45%, 30%);
+  }
+
+  100% {
+    transform: translate(15%, 65%);
+  }
+}
+
+@keyframes moveGradientTwo {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-40%, -35%);
+  }
+
+  100% {
+    transform: translate(-10%, -60%);
+  }
+}

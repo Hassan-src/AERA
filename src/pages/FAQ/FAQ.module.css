@@ -55,6 +55,7 @@
   &:hover {
     box-shadow: none;
     color: var(--color-text-secondary);
+    background-color: transparent;
   }
 }
 @media only screen and (max-width: 1000px) {

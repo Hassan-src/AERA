@@ -13,7 +13,7 @@ function HamburgerModal() {
         <img className={styles.btnImage} src={search} alt="search" />
         Search
       </Button>
-      <Button className={styles.btns}>
+      <Button className={`${styles.btns} ${styles.btnLink}`} to={"/profile"}>
         <img className={styles.btnImage} src={profile} alt="profile" />
         Profile
       </Button>

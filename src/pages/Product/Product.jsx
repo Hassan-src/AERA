@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { products } from "../../data/products";
 import Button from "../../ui/Button";
 
@@ -7,10 +7,14 @@ import styles from "./Product.module.css";
 import cart from "../../assets/svgs/cart.svg";
 
 function Product() {
+  const navigate = useNavigate(-1);
   const { id } = useParams();
   const product = products.find((product) => product.id === Number(id));
   return (
     <div className={styles.main}>
+      <Button className={styles.backBtn} onClick={() => navigate(-1)}>
+        &larr; Back
+      </Button>
       <div className={styles.imageSide}>
         <img
           className={styles.mainImage}
@@ -20,6 +24,7 @@ function Product() {
         />
       </div>
       <div className={styles.productInfoSide}>
+        <span className={styles.productCategory}>{product.category}</span>
         <h1 className={styles.productName}>{product.name}</h1>
         <span className={styles.productType}>{product.type}</span>
         <p className={styles.productDescription}>{product.description}</p>
