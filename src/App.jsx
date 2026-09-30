@@ -16,6 +16,7 @@ import Error from "./ui/Error/Error";
 import Profile from "./pages/Profile/Profile";
 import { profileLoader } from "./utils/ProfileLoader";
 import { action as createAccountAction } from "./utils/ProfileAction";
+import Cart from "./pages/Cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/profile",

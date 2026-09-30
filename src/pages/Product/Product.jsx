@@ -1,5 +1,7 @@
+import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { products } from "../../data/products";
+import { addItem } from "../../features/Cart/cartSlice";
 import Button from "../../ui/Button";
 
 import styles from "./Product.module.css";
@@ -7,9 +9,13 @@ import styles from "./Product.module.css";
 import cart from "../../assets/svgs/cart.svg";
 
 function Product() {
-  const navigate = useNavigate(-1);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { id } = useParams();
   const product = products.find((product) => product.id === Number(id));
+  function handelAddToCart(item) {
+    dispatch(addItem(item));
+  }
   return (
     <div className={styles.main}>
       <Button className={styles.backBtn} onClick={() => navigate(-1)}>
@@ -32,7 +38,10 @@ function Product() {
           ${product.price}
           <span className={styles.productPriceOnTop}>.99</span>
         </span>
-        <Button className={styles.addToCartBtn}>
+        <Button
+          className={styles.addToCartBtn}
+          onClick={() => handelAddToCart(product)}
+        >
           <img className={styles.addToCartBtnImage} src={cart} alt="" />
           Add to cart
         </Button>

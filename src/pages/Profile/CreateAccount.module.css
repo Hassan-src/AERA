@@ -69,6 +69,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--spacing-xlg);
+  position: relative;
 }
 .profileForm {
   display: flex;
@@ -82,11 +83,11 @@
   align-items: center;
   gap: var(--spacing-lg);
 }
-.inputGroup label {
+.inputLabel {
   width: 130px;
 }
 
-.inputGroup input {
+.inputBox {
   width: 500px;
   height: 42px;
   padding: 0 var(--spacing-sm);
@@ -103,6 +104,23 @@
   margin-left: auto;
 }
 
+.inputError {
+  border: 2px solid #480a0f;
+  border-radius: var(--border-radius);
+}
+.errorMessage {
+  display: block;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  background-color: #480a0f;
+  border: 2px solid #99151e;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  position: absolute;
+  top: 20px;
+}
 @keyframes moveGradient {
   0% {
     transform: translate(0, 0);

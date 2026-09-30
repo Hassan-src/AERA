@@ -24,14 +24,24 @@ function UserAccount({ user }) {
         <div className={styles.userInfoBox}>
           <h2 className={styles.userDetailsHeaders}>Your Information</h2>
           <div className={styles.userInfoDetails}>
-            <p>Name: {user.name}</p>
-            <p>Last Name: {user.lastName}</p>
-            <p>Phone Number: {user.phoneNumber}</p>
-            <p>Address: {user.address}</p>
+            <p>
+              <span className={styles.infoTitle}>Name:</span> {user.name}
+            </p>
+            <p>
+              <span className={styles.infoTitle}>Last Name:</span>
+              {user.lastName}
+            </p>
+            <p>
+              <span className={styles.infoTitle}>Phone Number:</span>
+              {user.phoneNumber}
+            </p>
+            <p>
+              <span className={styles.infoTitle}>Address:</span> {user.address}
+            </p>
           </div>
         </div>
         <div className={styles.userInfoBox}>
-          {/* <h2 className={styles.userDetailsHeaders}>Your Orders</h2> */}
+          <h2 className={styles.userDetailsHeaders}>Your Orders</h2>
           <EmptyOrder />
         </div>
       </div>

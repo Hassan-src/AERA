@@ -26,6 +26,8 @@
 }
 
 .btnLink {
+  gap: var(--spacing-sm);
+  width: fit-content;
   transition:
     box-shadow 0.2s ease-out,
     color 0.2s ease-out,

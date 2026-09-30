@@ -1,8 +1,9 @@
-import { Form } from "react-router-dom";
+import { Form, useActionData } from "react-router-dom";
 import Button from "../../ui/Button";
 import styles from "./CreateAccount.module.css";
 
 function CreateAccount() {
+  const formErrors = useActionData();
   return (
     <div className={styles.main}>
       <div className={styles.mainBox}>
@@ -12,20 +13,55 @@ function CreateAccount() {
         <div className={styles.rightSide}>
           <Form method="POST" className={styles.profileForm}>
             <div className={styles.inputGroup}>
-              <label htmlFor="name">first name:</label>
-              <input type="text" name="name" id="name" required />
+              <label className={styles.inputLabel} htmlFor="name">
+                first name:
+              </label>
+              <input
+                className={styles.inputBox}
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="lastName">last name:</label>
-              <input type="text" name="lastName" id="lastName" required />
+              <label className={styles.inputLabel} htmlFor="lastName">
+                last name:
+              </label>
+              <input
+                className={styles.inputBox}
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+              />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="phoneNumber">Phone number:</label>
-              <input type="tel" name="phoneNumber" id="phoneNumber" required />
+              <label className={styles.inputLabel} htmlFor="phoneNumber">
+                Phone number:
+              </label>
+              <input
+                className={`${styles.inputBox} ${formErrors?.phoneNumber ? styles.inputError : ""}`}
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                required
+              />
+              {formErrors?.phoneNumber && (
+                <p className={styles.errorMessage}>*{formErrors.phoneNumber}</p>
+              )}
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="address">address:</label>
-              <input type="text" name="address" id="address" required />
+              <label className={styles.inputLabel} htmlFor="address">
+                address:
+              </label>
+              <input
+                className={styles.inputBox}
+                type="text"
+                name="address"
+                id="address"
+                required
+              />
             </div>
             <Button className={styles.submitBtn}>Submit</Button>
           </Form>
