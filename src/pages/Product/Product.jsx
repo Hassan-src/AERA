@@ -13,9 +13,6 @@ function Product() {
   const navigate = useNavigate();
   const { id } = useParams();
   const product = products.find((product) => product.id === Number(id));
-  function handelAddToCart(item) {
-    dispatch(addItem(item));
-  }
   return (
     <div className={styles.main}>
       <Button className={styles.backBtn} onClick={() => navigate(-1)}>
@@ -40,7 +37,7 @@ function Product() {
         </span>
         <Button
           className={styles.addToCartBtn}
-          onClick={() => handelAddToCart(product)}
+          onClick={() => dispatch(addItem(product))}
         >
           <img className={styles.addToCartBtnImage} src={cart} alt="" />
           Add to cart

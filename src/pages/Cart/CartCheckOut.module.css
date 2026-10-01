@@ -1,0 +1,38 @@
+.cartTotal {
+  width: 20%;
+  height: 100%;
+  padding: var(--spacing-lg);
+}
+
+.cartCard {
+  width: 100%;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent-light);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xlg);
+  position: sticky;
+  top: var(--spacing-lg);
+}
+.cartHeader {
+  font-size: 2rem;
+  text-align: center;
+}
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.totalItems,
+.totalPrice {
+  display: flex;
+  gap: var(--spacing-xlg);
+}
+.totalText {
+  text-transform: capitalize;
+  color: var(--color-text-secondary);
+}
+.totalNumber {
+  font-weight: 500;
+}

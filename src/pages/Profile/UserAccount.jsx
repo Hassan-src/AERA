@@ -1,8 +1,11 @@
-import styles from "./UserAccount.module.css";
-import look from "../../assets/svgs/look.svg";
 import Button from "../../ui/Button";
 import { useNavigate } from "react-router-dom";
 import EmptyOrder from "../../ui/Profile/EmptyOrder";
+
+import styles from "./UserAccount.module.css";
+
+import look from "../../assets/svgs/look.svg";
+
 function UserAccount({ user }) {
   const navigate = useNavigate();
   function handleLogOut() {

@@ -32,6 +32,7 @@ function FormatOption({ arrayName, setSelectorValue }) {
               onClick={(e) => handleFormSelect(e)}
               data-value={option.value}
               className={styles.selectorOptions}
+              key={option.label}
             >
               {option.label}
             </li>

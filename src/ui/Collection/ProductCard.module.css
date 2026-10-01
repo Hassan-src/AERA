@@ -49,10 +49,6 @@
   justify-content: space-between;
 }
 
-.productPriceOnTop {
-  font-size: 0.8rem;
-}
-
 .btnOpen {
   background: var(--color-accent-dark);
   padding: var(--spacing-xsm) var(--spacing-sm);

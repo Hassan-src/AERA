@@ -194,6 +194,10 @@ select {
     background-color: var(--color-brown-light);
   }
 }
+object[type="image/svg+xml"] {
+  color-scheme: light;
+  background: transparent;
+}
 ::-webkit-scrollbar {
   background-color: var(--color-bg);
 }

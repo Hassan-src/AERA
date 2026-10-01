@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-xlg);
+  padding: 5rem 0 10rem 0;
+}
+.message {
+  font-size: 2rem;
+  letter-spacing: 0.18rem;
+}
+.emptyText {
+  text-transform: capitalize;
+  color: var(--color-accent-dark);
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  background: var(--color-accent-dark);
+  transition:
+    box-shadow 0.2s ease-out,
+    color 0.2s ease-out,
+    background-color 0.2s ease-out,
+    filter 0.2s ease-out;
+  border-radius: var(--border-radius);
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    color: var(--color-accent-dark);
+    background-color: var(--color-darkest);
+  }
+}
+.emptyAnimation {
+  width: 300px;
+  background-color: var(--color-bg);
+}

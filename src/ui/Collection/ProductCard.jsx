@@ -1,6 +1,8 @@
 import Button from "../Button.jsx";
-import styles from "./ProductCard.module.css";
 import { products } from "../../data/products.js";
+
+import styles from "./ProductCard.module.css";
+
 function ProductCard() {
   return (
     <>
@@ -18,10 +20,7 @@ function ProductCard() {
             <div className={styles.productInfo}>
               <h4 className={styles.productName}>{data.name}</h4>
               <div className={styles.priceBtnBox}>
-                <span className={styles.productPrice}>
-                  ${data.price}
-                  <span className={styles.productPriceOnTop}>.99</span>
-                </span>
+                <span className={styles.productPrice}>${data.price}</span>
                 <Button className={styles.btnOpen} to={`/product/${data.id}`}>
                   view product &rarr;
                 </Button>
