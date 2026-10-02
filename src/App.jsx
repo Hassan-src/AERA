@@ -17,6 +17,7 @@ import Profile from "./pages/Profile/Profile";
 import { profileLoader } from "./utils/ProfileLoader";
 import { action as createAccountAction } from "./utils/ProfileAction";
 import Cart from "./pages/Cart/Cart";
+import OrderReceipt from "./ui/Cart/OrderReceipt";
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,7 @@ const router = createBrowserRouter([
         element: <Warranty />,
       },
       {
-        path: "/collection",
+        path: "/collection/:value",
         element: <Collection />,
       },
       {
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
         element: <Profile />,
         loader: profileLoader,
         action: createAccountAction,
+      },
+      {
+        path: "/orders/:id",
+        element: <OrderReceipt />,
       },
     ],
   },

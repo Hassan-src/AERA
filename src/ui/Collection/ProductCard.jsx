@@ -3,10 +3,21 @@ import { products } from "../../data/products.js";
 
 import styles from "./ProductCard.module.css";
 
-function ProductCard() {
+function ProductCard({ categoriesValue, pricingValue }) {
+  const category = products.filter((data) => data.category === categoriesValue);
+  let selectedCategoryProducts =
+    categoriesValue === "allProducts" ? products : category;
+  if (pricingValue === "expensive")
+    selectedCategoryProducts = [...selectedCategoryProducts].sort(
+      (a, b) => b.price - a.price,
+    );
+  if (pricingValue === "cheap")
+    selectedCategoryProducts = [...selectedCategoryProducts].sort(
+      (a, b) => a.price - b.price,
+    );
   return (
     <>
-      {products.map((data) => (
+      {selectedCategoryProducts.map((data) => (
         <div className={styles.main} key={data.id}>
           <div className={styles.productImageBox}>
             <img

@@ -37,22 +37,25 @@ function Footer() {
           <span className={styles.listName}>Shop</span>
           <ul className={styles.lists}>
             <li>
-              <Button className={styles.listChild} to={"/allproducts"}>
+              <Button
+                className={styles.listChild}
+                to={"/collection/allProducts"}
+              >
                 All products
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/allproducts"}>
+              <Button className={styles.listChild} to={"/collection/sofa"}>
                 sofas
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/allproducts"}>
+              <Button className={styles.listChild} to={"/collection/table"}>
                 tables
               </Button>
             </li>
             <li>
-              <Button className={styles.listChild} to={"/allproducts"}>
+              <Button className={styles.listChild} to={"/collection/chair"}>
                 chairs
               </Button>
             </li>

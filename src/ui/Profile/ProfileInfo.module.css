@@ -1,0 +1,10 @@
+.infoTitle {
+  color: var(--color-text-secondary);
+}
+.userInfoDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-xlg);
+  padding: var(--spacing-xlg);
+}

@@ -5,11 +5,14 @@ import EmptyOrder from "../../ui/Profile/EmptyOrder";
 import styles from "./UserAccount.module.css";
 
 import look from "../../assets/svgs/look.svg";
+import Order from "./Order";
+import ProfileInfo from "../../ui/Profile/ProfileInfo";
 
 function UserAccount({ user }) {
   const navigate = useNavigate();
+  const orders = JSON.parse(localStorage.getItem("orders"));
   function handleLogOut() {
-    localStorage.clear("user");
+    localStorage.clear();
     navigate(-1);
   }
   return (
@@ -26,26 +29,11 @@ function UserAccount({ user }) {
       <div className={styles.userDetails}>
         <div className={styles.userInfoBox}>
           <h2 className={styles.userDetailsHeaders}>Your Information</h2>
-          <div className={styles.userInfoDetails}>
-            <p>
-              <span className={styles.infoTitle}>Name:</span> {user.name}
-            </p>
-            <p>
-              <span className={styles.infoTitle}>Last Name:</span>
-              {user.lastName}
-            </p>
-            <p>
-              <span className={styles.infoTitle}>Phone Number:</span>
-              {user.phoneNumber}
-            </p>
-            <p>
-              <span className={styles.infoTitle}>Address:</span> {user.address}
-            </p>
-          </div>
+          <ProfileInfo user={user} />
         </div>
         <div className={styles.userInfoBox}>
           <h2 className={styles.userDetailsHeaders}>Your Orders</h2>
-          <EmptyOrder />
+          {orders === null ? <EmptyOrder /> : <Order />}
         </div>
       </div>
     </div>

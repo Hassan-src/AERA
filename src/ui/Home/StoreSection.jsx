@@ -7,9 +7,9 @@ import cart from "../../assets/svgs/cart-white.svg";
 import arrow from "../../assets/svgs/Arrow-right.svg";
 function StoreSection() {
   const storeData = [
-    products.find((data) => data.category === "Sofa"),
-    products.find((data) => data.category === "Table"),
-    products.find((data) => data.category === "Chair"),
+    products.find((data) => data.category === "sofa"),
+    products.find((data) => data.category === "table"),
+    products.find((data) => data.category === "chair"),
   ];
   return (
     <div className={styles.main}>
@@ -21,7 +21,7 @@ function StoreSection() {
         <div className={styles.merchesMainBox}>
           {storeData.map((data) => (
             <div
-              className={`${styles.merches} ${data.category === "Table" ? styles.table : ""}`}
+              className={`${styles.merches} ${data.category === "table" ? styles.table : ""}`}
               key={data.id}
             >
               <div className={styles.merchImageBox}>

@@ -1,0 +1,35 @@
+.main {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.contentBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-xlg);
+}
+.infoBox {
+  display: flex;
+  gap: var(--spacing-md);
+}
+.title {
+  text-transform: capitalize;
+  color: var(--color-text-secondary);
+}
+.backBtn {
+  width: fit-content;
+  background-color: transparent;
+  color: var(--color-text);
+  margin-right: auto;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    box-shadow: none;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+  }
+}

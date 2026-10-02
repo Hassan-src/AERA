@@ -5,14 +5,13 @@ import styles from "./FormatOption.module.css";
 
 import arrow from "../../assets/svgs/Arrow-right.svg";
 
-function FormatOption({ arrayName, setSelectorValue }) {
+function FormatOption({ arrayName, setSelectedValue }) {
   const [selectorMenu, setSelectorMenu] = useState(false);
   const [selectorLabel, setSelectorLabel] = useState("Select");
-
   function handleFormSelect(e) {
     const value = e.currentTarget.dataset.value;
     const label = e.currentTarget.innerText;
-    setSelectorValue(value);
+    setSelectedValue(value);
     setSelectorLabel(label);
     setSelectorMenu(false);
   }
