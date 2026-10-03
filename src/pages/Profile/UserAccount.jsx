@@ -12,7 +12,7 @@ function UserAccount({ user }) {
   const navigate = useNavigate();
   const orders = JSON.parse(localStorage.getItem("orders"));
   function handleLogOut() {
-    localStorage.clear();
+    localStorage.removeItem("user");
     navigate(-1);
   }
   return (

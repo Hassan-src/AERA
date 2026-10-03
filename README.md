@@ -74,7 +74,7 @@ between:
 
 - UI components
 - Custom hooks
-- Context
+- Redux
 - Application state
 
 This architecture keeps the application modular and makes individual parts

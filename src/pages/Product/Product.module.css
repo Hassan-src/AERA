@@ -77,15 +77,15 @@
 @media only screen and (max-width: 1000px) {
   .main {
     flex-direction: column;
-    height: none;
+    min-height: auto;
   }
   .imageSide {
     width: 100%;
-    height: 40%;
+    height: auto;
   }
   .productInfoSide {
     width: 100%;
-    height: 50%;
+    height: auto;
     padding: var(--spacing-md) var(--spacing-lg);
   }
 }
