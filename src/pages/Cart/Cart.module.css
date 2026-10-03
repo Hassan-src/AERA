@@ -3,3 +3,8 @@
   min-height: 90dvh;
   display: flex;
 }
+@media only screen and (max-width: 1050px) {
+  .main {
+    flex-direction: column;
+  }
+}

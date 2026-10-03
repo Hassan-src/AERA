@@ -52,21 +52,6 @@
   justify-content: center;
   border-bottom: 1px solid var(--color-border);
   gap: var(--spacing-lg);
-}
-.userDetails {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-lg);
-}
-.userInfoBox {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 0;
-  border-right: 1px solid var(--color-border);
   position: relative;
 }
 
@@ -98,6 +83,23 @@
   }
 }
 
+.userDetails {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+.userInfoBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  border-right: 1px solid var(--color-border);
+  position: relative;
+}
+
 @keyframes moveGradient {
   0% {
     transform: translate(0, 0);
@@ -123,5 +125,79 @@
 
   100% {
     transform: translate(-10%, -60%);
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .userDetails {
+    flex-direction: column;
+  }
+  .userInfoBox {
+    width: 100%;
+    height: 50%;
+  }
+  .userDetailsHeaders {
+    font-size: 2rem;
+  }
+  .userInfoBox {
+    padding: 4rem 0;
+  }
+  .userOrderBox {
+    border-top: 1px solid var(--color-border);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .user {
+    gap: var(--spacing-md);
+    justify-content: flex-start;
+    padding: var(--spacing-md);
+  }
+  .welcomeText {
+    font-size: 2.2rem;
+  }
+  .userInfoBox {
+    padding: 3rem 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 130dvh;
+  }
+  .welcomeText {
+    font-size: 2rem;
+  }
+  .logOutBtn {
+    bottom: 20px;
+  }
+  .userDetails {
+    gap: var(--spacing-sm);
+  }
+  .userInfoBox {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcomeText {
+    font-size: 1.5rem;
+  }
+  .userDetailsHeaders {
+    font-size: 1.3rem;
+    padding: var(--spacing-md);
+  }
+  .imageWrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .userDetailsHeaders {
+    font-size: 1rem;
+    padding: var(--spacing-md);
+  }
+  .logOutBtn {
+    font-size: 0.9rem;
+  }
+  .userInfoBox {
+    padding: var(--spacing-md) 0;
   }
 }

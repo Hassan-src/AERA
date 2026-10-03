@@ -32,11 +32,11 @@ function OrderReceipt() {
         </div>
         <div className={styles.infoBox}>
           <span className={styles.title}>products:</span>
-          <p className={styles.products}>{order.name}</p>
+          <p className={styles.info}>{order.name}</p>
         </div>
         <div className={styles.infoBox}>
           <span className={styles.title}>Shipping time:</span>
-          <p className={styles.shipment}>
+          <p className={styles.info}>
             Shipment can take <b>1-4 weeks</b> depending on where you live!
           </p>
         </div>

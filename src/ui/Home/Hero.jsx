@@ -16,7 +16,7 @@ function Hero() {
             Timeless forms, refined materials, and thoughtful craftsmanship for
             elevated living.
           </p>
-          <Button className={styles.showRoomBtn} to={"/Collection"}>
+          <Button className={styles.showRoomBtn} to={"/Collection/allProducts"}>
             explore collection
           </Button>
         </div>

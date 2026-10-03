@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  height: 90dvh;
+  height: 80dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,6 +70,7 @@
   justify-content: center;
   padding: var(--spacing-xlg);
   position: relative;
+  padding-top: 5rem;
 }
 .profileForm {
   display: flex;
@@ -89,8 +90,7 @@
 
 .inputBox {
   width: 500px;
-  height: 42px;
-  padding: 0 var(--spacing-sm);
+  padding: var(--spacing-sm);
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--color-border);
@@ -146,5 +146,134 @@
 
   100% {
     transform: translate(-10%, -60%);
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .main {
+    gap: var(--spacing-lg);
+  }
+  .profileForm {
+    gap: var(--spacing-xlg);
+  }
+  .inputBox {
+    width: 400px;
+  }
+  .inputGroup {
+    gap: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .inputBox {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .inputBox {
+    width: 250px;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .inputLabel {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    font-size: 1.8rem;
+  }
+  .inputLabel {
+    font-size: 0.8rem;
+  }
+  .main {
+    gap: var(--spacing-md);
+  }
+  .mainBox {
+    flex-direction: column;
+  }
+  .profileForm {
+    gap: var(--spacing-lg);
+  }
+  .inputGroup {
+    gap: var(--spacing-md);
+  }
+  .leftSide {
+    width: 100%;
+    height: 50%;
+  }
+  .rightSide {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 1.4rem;
+  }
+
+  .leftSide {
+    height: 40%;
+    padding: var(--spacing-md);
+  }
+  .inputBox {
+    width: 180px;
+    font-size: 0.9rem;
+  }
+  .inputGroup {
+    gap: var(--spacing-xsm);
+  }
+  .inputLabel {
+    font-size: 0.7rem;
+  }
+  .submitBtn {
+    font-size: 0.9rem;
+    padding: var(--spacing-sm);
+  }
+  .errorMessage {
+    font-size: 0.8rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    font-size: 1.2rem;
+  }
+  .inputLabel {
+    font-size: 0.6rem;
+  }
+  .leftSide {
+    height: 40%;
+  }
+  .rightSide {
+    padding-top: 3rem;
+  }
+  .inputBox {
+    padding: var(--spacing-xsm);
+    font-size: 0.8rem;
+  }
+  .submitBtn {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header {
+    font-size: 1rem;
+  }
+  .inputLabel {
+    font-size: 0.5rem;
+  }
+  .leftSide {
+    height: 40%;
+  }
+
+  .inputGroup {
+    gap: 0;
+  }
+  .inputBox {
+    font-size: 0.7rem;
+  }
+  .submitBtn {
+    font-size: 0.6rem;
   }
 }

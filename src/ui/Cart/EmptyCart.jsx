@@ -12,11 +12,11 @@ function EmptyCart() {
       <p className={styles.message}>
         Your cart is <span className={styles.emptyText}>empty</span>
       </p>
-      <p>
+      <p className={styles.messageText}>
         Looks like you have not added anything to your cart yet. Go ahead and
         explore our categories.
       </p>
-      <Button className={styles.btn} to={"/collection"}>
+      <Button className={styles.btn} to={"/collection/allProducts"}>
         Explore our Collection &rarr;
       </Button>
     </div>

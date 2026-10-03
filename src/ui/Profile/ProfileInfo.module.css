@@ -8,3 +8,26 @@
   gap: var(--spacing-xlg);
   padding: var(--spacing-xlg);
 }
+
+@media only screen and (max-width: 960px) {
+  .infoText {
+    font-size: 0.9rem;
+  }
+  .userInfoDetails {
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .infoText {
+    font-size: 0.8rem;
+  }
+  .userInfoDetails {
+    padding: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .infoText {
+    font-size: 0.7rem;
+  }
+}

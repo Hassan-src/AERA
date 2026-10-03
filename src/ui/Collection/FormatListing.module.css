@@ -26,3 +26,21 @@
     background-color: transparent;
   }
 }
+@media only screen and (max-width: 840px) {
+  .main {
+    padding: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .backBtn {
+    font-size: 0.6rem;
+  }
+  .selectorsForm {
+    gap: var(--spacing-xsm);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .backBtn {
+    font-size: 0.5rem;
+  }
+}

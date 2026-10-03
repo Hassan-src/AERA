@@ -21,7 +21,7 @@ function UserAccount({ user }) {
         <span className={styles.imageWrapper}>
           <img className={styles.userImage} src={look} alt="" />
         </span>
-        <h1>Hello, {user.name}</h1>
+        <h1 className={styles.welcomeText}>Hello, {user.name}</h1>
         <Button className={styles.logOutBtn} onClick={handleLogOut}>
           LogOut
         </Button>
@@ -31,7 +31,7 @@ function UserAccount({ user }) {
           <h2 className={styles.userDetailsHeaders}>Your Information</h2>
           <ProfileInfo user={user} />
         </div>
-        <div className={styles.userInfoBox}>
+        <div className={`${styles.userInfoBox} ${styles.userOrderBox}`}>
           <h2 className={styles.userDetailsHeaders}>Your Orders</h2>
           {orders === null ? <EmptyOrder /> : <Order />}
         </div>

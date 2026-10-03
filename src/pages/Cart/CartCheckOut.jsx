@@ -34,16 +34,18 @@ function CartCheckOut() {
       <div className={styles.cartCard}>
         <h2 className={styles.cartHeader}>Cart Totals</h2>
         <div className={styles.totals}>
-          <div className={styles.totalItems}>
+          <div className={styles.items}>
             <span className={styles.totalText}>total items:</span>
             <span className={styles.totalNumber}>{totalItems}</span>
           </div>
-          <div className={styles.totalPrice}>
+          <div className={styles.items}>
             <span className={styles.totalText}>total price:</span>
             <span className={styles.totalNumber}>${totalPrice}</span>
           </div>
         </div>
-        <Button onClick={handleCheckOut}>Check Out</Button>
+        <Button className={styles.checkOutBtn} onClick={handleCheckOut}>
+          Check Out
+        </Button>
       </div>
     </div>
   );

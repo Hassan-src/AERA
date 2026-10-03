@@ -3,15 +3,11 @@ import Button from "../Button";
 import styles from "./HeaderBtns.module.css";
 
 import cart from "../../assets/svgs/cart.svg";
-import search from "../../assets/svgs/search.svg";
 import profile from "../../assets/svgs/profile.svg";
 
 function HeaderBtns() {
   return (
     <div className={styles.btnBox}>
-      <Button className={styles.btns}>
-        <img className={styles.btnImage} src={search} alt="search" />
-      </Button>
       <Button className={`${styles.btns} ${styles.btnLink}`} to={"/profile"}>
         <img className={styles.btnImage} src={profile} alt="profile" />
       </Button>

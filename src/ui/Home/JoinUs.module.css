@@ -52,15 +52,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xlg);
 }
 .joinUsText {
   color: var(--color-text-secondary);
 }
 .joinUsBtn {
   width: 20%;
-  padding: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-sm);
   background: var(--color-accent-dark);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   border: none;
   display: flex;
   align-items: center;
@@ -200,7 +202,8 @@
     padding: 0 var(--spacing-sm);
   }
   .joinUsBtn {
-    font-size: 0.8rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -235,6 +238,10 @@
   .joinUsText {
     font-size: 0.7rem;
     text-align: center;
+  }
+  .joinUsBtn {
+    padding: var(--spacing-xsm) var(--spacing-md);
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 340px) {

@@ -7,18 +7,18 @@ function Order() {
     <ul className={styles.listMain}>
       {orders.map((receipt) => (
         <li className={styles.list}>
-          <p>
+          <p className={styles.text}>
             <span className={styles.title}>ID:</span> {receipt.id.slice(0, 9)}
             ...
           </p>
-          <p>
+          <p className={styles.text}>
             <span className={styles.title}>Items:</span> {receipt.totalItems}
           </p>
-          <p>
+          <p className={styles.text}>
             <span className={styles.title}>Total:</span> ${receipt.totalPrice}
           </p>
           <Button className={styles.btnView} to={`/orders/${receipt.id}`}>
-            View Receipt &rarr;
+            View Receipt
           </Button>
         </li>
       ))}

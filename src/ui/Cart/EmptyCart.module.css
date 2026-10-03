@@ -38,3 +38,52 @@
   width: 300px;
   background-color: var(--color-bg);
 }
+
+@media only screen and (max-width: 900px) {
+  .main {
+    padding: 5rem var(--spacing-md) 10rem var(--spacing-md);
+  }
+  .messageText {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main {
+    padding: 5rem var(--spacing-md) 10rem var(--spacing-md);
+  }
+  .messageText {
+    font-size: 0.9rem;
+  }
+  .message {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main {
+    padding: 5rem var(--spacing-md) 10rem var(--spacing-md);
+  }
+  .messageText {
+    font-size: 0.8rem;
+  }
+  .message {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main {
+    padding: 2rem var(--spacing-md) 10rem var(--spacing-md);
+  }
+  .messageText {
+    font-size: 0.7rem;
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: var(--spacing-sm);
+  }
+  .emptyAnimation {
+    width: 200px;
+  }
+}

@@ -37,3 +37,36 @@
     background-color: var(--color-darkest);
   }
 }
+@media only screen and (max-width: 1150px) {
+  .btnView {
+    font-size: 0.7rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .btnView {
+    font-size: 0.6rem;
+  }
+  .text {
+    font-size: 0.7rem;
+  }
+  .listMain {
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btnView {
+    font-size: 0.5rem;
+    padding: 0 var(--spacing-xsm);
+  }
+  .text {
+    font-size: 0.5rem;
+  }
+  .listMain {
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+  }
+}

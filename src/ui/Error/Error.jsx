@@ -1,5 +1,6 @@
 import { useNavigate, useRouteError } from "react-router-dom";
 import styles from "./Error.module.css";
+import Button from "../Button";
 function Error() {
   const navigate = useNavigate();
   const error = useRouteError();
@@ -10,9 +11,9 @@ function Error() {
       </div>
       <div className={styles.messageBox}>
         <p className={styles.errorMessage}>{error.data || error.message}</p>
-        <button className={styles.goBackBtn} onClick={() => navigate(-1)}>
+        <Button className={styles.goBackBtn} onClick={() => navigate(-1)}>
           &larr;Go back
-        </button>
+        </Button>
       </div>
     </div>
   );

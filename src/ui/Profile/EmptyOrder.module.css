@@ -1,5 +1,5 @@
 .main {
-  width: 100%;
+  width: 90%;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -25,13 +25,72 @@
   transition:
     box-shadow 0.2s ease-out,
     color 0.2s ease-out,
-    background-color 0.2s ease-out,
-    filter 0.2s ease-out;
+    background-color 0.2s ease-out;
   border-radius: var(--border-radius);
   &:hover {
     cursor: pointer;
     box-shadow: var(--shadow);
     color: var(--color-accent-dark);
     background-color: var(--color-darkest);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 4rem;
+    margin-top: var(--spacing-lg);
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .main {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 790px) {
+  .main {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .main {
+    width: 60%;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 2rem;
+  }
+  .message {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 70%;
+    padding: var(--spacing-lg);
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: var(--spacing-sm);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main {
+    width: 70%;
+    padding: var(--spacing-md);
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: var(--spacing-sm);
   }
 }

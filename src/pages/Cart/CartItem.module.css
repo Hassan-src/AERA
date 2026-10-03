@@ -59,3 +59,89 @@
 .btnDeleteImage {
   width: 20px;
 }
+
+@media only screen and (max-width: 1050px) {
+  .shopList {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .item {
+    height: 20%;
+    padding: var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 740px) {
+  .itemName {
+    font-size: 1.4rem;
+  }
+  .itemCategory {
+    font-size: 0.9rem;
+  }
+  .itemPrice {
+    font-size: 1rem;
+  }
+  .btnDeleteImage {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .item {
+    height: 15%;
+    padding: var(--spacing-md);
+  }
+  .itemName {
+    font-size: 1.2rem;
+  }
+  .itemCategory {
+    font-size: 0.7rem;
+  }
+  .itemPrice {
+    font-size: 0.8rem;
+  }
+  .btnDeleteImage {
+    width: 15px;
+  }
+  .btnDeleteAll {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .item {
+    padding: var(--spacing-sm);
+  }
+  .itemName {
+    font-size: 1rem;
+  }
+  .itemCategory {
+    font-size: 0.6rem;
+  }
+  .itemPrice {
+    font-size: 0.7rem;
+  }
+  .btnDeleteImage {
+    width: 10px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .item {
+    padding: var(--spacing-xsm);
+  }
+  .itemName {
+    font-size: 0.8rem;
+  }
+  .itemCategory {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+  .itemPrice {
+    font-size: 0.6rem;
+  }
+  .btnDeleteImage {
+    padding: var(--spacing-xsm);
+  }
+  .btnDeleteAll {
+    font-size: 0.7rem;
+  }
+}

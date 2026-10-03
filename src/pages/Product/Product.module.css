@@ -74,3 +74,75 @@
     background-color: transparent;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    height: none;
+  }
+  .imageSide {
+    width: 100%;
+    height: 40%;
+  }
+  .productInfoSide {
+    width: 100%;
+    height: 50%;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    padding-top: var(--spacing-md);
+  }
+  .imageSide {
+    margin-bottom: var(--spacing-md);
+  }
+  .productInfoSide {
+    padding: var(--spacing-md);
+  }
+  .productName {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .productInfoSide {
+    gap: var(--spacing-md);
+  }
+  .productCategory {
+    font-size: 0.8rem;
+  }
+  .productDescription {
+    font-size: 0.9rem;
+  }
+  .productPriceOnTop {
+    font-size: 0.8rem;
+  }
+  .productPrice {
+    font-size: 0.9rem;
+  }
+  .productName {
+    font-size: 1.6rem;
+  }
+  .productType {
+    font-size: 0.7rem;
+  }
+  .backBtn {
+    font-size: 0.9rem;
+  }
+  .addToCartBtn {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .productDescription {
+    font-size: 0.7rem;
+  }
+  .productPrice {
+    font-size: 0.9rem;
+  }
+  .productPriceOnTop {
+    font-size: 0.7rem;
+  }
+  .productPrice {
+    font-size: 0.8rem;
+  }
+}
