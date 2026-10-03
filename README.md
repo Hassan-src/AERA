@@ -4,17 +4,17 @@
 
 <br />
 
-# 🍿 AERA
+# 🛋️ AERA
 
-### Your gateway to cinematic worlds.
+### AERA — The Shape of Living.
 
 A modern and responsive e-commerce application built with React that provides
 different furniture with profile creation.
 
 <br />
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://cine-scope-blond-ten.vercel.app/)
-[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassan-src/CineScope)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://aera-gamma.vercel.app/)
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassan-src/AERA)
 
 </div>
 
@@ -22,22 +22,18 @@ different furniture with profile creation.
 
 ## ✨ Overview
 
-**CineScope** is a React-based movie application designed to provide users
-with movies and tvseries information with the ability to save wanted movies.
+**AERA** is a React-based e-commerce application designed to provide users
+with furnitures.
 
-The application allows users to explore movies and tvseries and view information such as:
+The application allows users to explore different categories of furnitures:
 
-- Release date
-- Casts
-- Genres
-- Ratings
-- Overview
-- Watch trailers
-- Bookmarking movies
+- All products
+- Sofas
+- Chairs
+- Tables
 
 The project focuses on building a polished frontend experience while
-practicing real-world API integration, asynchronous data fetching,
-React state management, reusable components, custom hooks, and responsive design.
+practicing redux, react router, reusable components, custom hooks, and responsive design.
 
 ---
 
@@ -57,15 +53,17 @@ React state management, reusable components, custom hooks, and responsive design
 
 ### Technologies
 
-| Technology      | Purpose                                   |
-| --------------- | ----------------------------------------- |
-| ⚛️ React        | UI development and component architecture |
-| 🟨 JavaScript   | Application logic                         |
-| 🌐 HTML5        | Semantic structure                        |
-| 🎨 CSS3         | Styling and responsive layouts            |
-| ⚡ Vite         | Development server and production build   |
-| 🔍 ESLint       | Code quality and linting                  |
-| 🐙 Git & GitHub | Version control                           |
+| Technology       | Purpose                                   |
+| ---------------- | ----------------------------------------- |
+| ⚛️ React         | UI development and component architecture |
+| 🟨 JavaScript    | Application logic                         |
+| 🌐 HTML5         | Semantic structure                        |
+| 🎨 CSS3          | Styling and responsive layouts            |
+| 🧭 React Router  | Client-side routing and navigation        |
+| 🔄 Redux Toolkit | Global state management                   |
+| ⚡ Vite          | Development server and production build   |
+| 🔍 ESLint        | Code quality and linting                  |
+| 🐙 Git & GitHub  | Version control                           |
 
 ---
 
@@ -77,7 +75,6 @@ between:
 - UI components
 - Custom hooks
 - Context
-- API services
 - Application state
 
 This architecture keeps the application modular and makes individual parts
@@ -89,49 +86,17 @@ easier to maintain and extend.
 
 ### Desktop
 
-<img src="./docs/images/Desktop.png" alt="CineScope desktop preview" width="100%" />
+<img src="./docs/images/Desktop.png" alt="aera desktop preview" width="100%" />
 
 ### Mobile & Tablet
 
-<img src="./docs/images/mobile.png" alt="CineScope mobile preview" width="100%" />
-
----
-
-## 🌐 API Integration
-
-CineScope uses an external movie API to retrieve real-time movies information.
-
-The API layer is isolated inside:
-
-```text
-src/services/api.js
-```
-
-The application then consumes that data through custom React Hooks.
-
-```text
-External Movie API
-        ↓
-src/services/api.js
-        ↓
-Custom React Hooks
-        ↓
-Context / Application State
-        ↓
-React Components
-        ↓
-User Interface
-```
-
-This architecture keeps API communication and data-fetching responsibilities
-separate from UI components, making the application easier to maintain,
-test, and extend.
+<img src="./docs/images/mobile.png" alt="aera mobile preview" width="100%" />
 
 ---
 
 ## 📱 Responsive Design
 
-CineScope is designed to work across different screen sizes.
+AERA is designed to work across different screen sizes.
 
 The interface adapts to:
 
@@ -145,18 +110,14 @@ and responsive components.
 
 ---
 
-## ⚡ Loading & Error States
+## ⚡ Error States
 
-Network requests can take time or fail, so CineScope provides appropriate
+Network requests can take time or fail, so AERA provides appropriate
 application states.
-
-### Loading
-
-A skeleton loader is displayed while movies information is being retrieved.
 
 ### Error
 
-If the API request fails, the application provides
+If the request fails, the application provides
 an appropriate error state instead of leaving the interface blank.
 
 ---
@@ -170,7 +131,6 @@ The project aims to provide:
 - Semantic HTML
 - Accessible form controls
 - Visible interactive states
-- Keyboard-friendly interactions
 - Appropriate text contrast
 - Responsive layouts
 - Clear error feedback
@@ -181,53 +141,61 @@ The project aims to provide:
 ## 📂 Project Structure
 
 ```text
-cinescope/
+aera/
 │
 ├── public/
 │
 ├── src/
-│   ├── components/
-│   │   ├── Bookmark/
-│   │   ├── Button/
-│   │   ├── DifferentMovies/
-│   │   ├── Error/
-│   │   ├── Header/
-│   │   ├── Hero/
-│   │   ├── Loading/
-│   │   ├── NavBar
-│   │   ├── Series
-│   │   ├── TextExpander
-│   │   └── TrailerModal
-│   ├── context/
-│   │   ├── MovieContext.jsx
-│   │   └── useMovieProvider.js
+│   ├── data/
+│   │   ├── product.js
+│   │   ├── ShippingReturnsIds.js
+│   │   └── Slider.js
+│   │
+│   ├── features/
+│   │   ├── cart/
+│   │   │   └── cartSlice.js
+│   │   └── store.js
 │   │
 │   ├── hooks/
-│   │   ├── useImdbRating.js
-│   │   └── useLocalStorageState.js
 │   │
 │   │
 │   ├── Pages/
-│   │   ├── Bookmark/
+│   │   ├── Care Instructions/
+│   │   ├── Cart/
+│   │   ├── Collection/
+│   │   ├── Contact Us/
+│   │   ├── CraftsmanShip/
+│   │   ├── FAQ/
 │   │   ├── Home/
-│   │   ├── Login/
-│   │   ├── Movies/
-│   │   ├── PageNotFound/
-│   │   └── Series/
+│   │   ├── LearnOurStory/
+│   │   ├── Product/
+│   │   ├── Profile/
+│   │   ├── Shipping & returns/
+│   │   ├── Sustainability/
+│   │   └── Warranty/
 │   │
 │   │
-│   ├── services/
-│   │   └── api.js
+│   ├── ui/
+│   │   ├── Cart/
+│   │   ├── Collection/
+│   │   ├── Error/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Home/
+│   │   ├── Profile/
+│   │   ├── AppLayout.jsx
+│   │   ├── AppLayout.module.css
+│   │   └── Button
 │   │
 │   ├── utils/
-│   │   └── image.js
+│   │   ├── ProfileAction.js
+│   │   ├── ProfileLoader.js
+│   │   └── ScrollToTop.js
 │   │
-│   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
 │
-├── .env.example
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
@@ -243,28 +211,19 @@ cinescope/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Hassan-src/CineScope
+git clone https://github.com/Hassan-src/AERA
 ```
 
 ### 2. Navigate to the project
 
 ```bash
-cd cinescope
+cd aera
 ```
 
 ### 3. Install dependencies
 
 ```bash
 npm install
-```
-
-### 4. Configure environment variables
-
-Create a `.env` file:
-
-```env
-VITE_TMDB_TOKEN=your_api_token_here
-VITE_OMDB_KEY=your_api_key_here
 ```
 
 ### 5. Start the development server
@@ -278,37 +237,30 @@ provided by Vite.
 
 ---
 
----
-
 ## 🔮 Future Improvements
 
-The current version focuses on the core movie experience.
+The current version focuses on the core e-commerce experience.
 
 Possible future improvements include:
 
-- 📍 Dedicated page for each movie
-- 🙍‍♂️ Signup Page
-- ⛔ Logout Ability
+- 🛋️ More furniture categories
+- 📥 Dedicated API
 
 ---
 
 ## 📚 What I Learned
 
-Building cinescope helped me strengthen my understanding of:
+Building AERA helped me strengthen my understanding of:
 
 - ⚛️ React component architecture
 - 🪝 Custom React Hooks
-- 🧠 Context API
+- 🧠 Redux
 - 🔄 Asynchronous JavaScript
-- 🌐 REST API integration
-- 📡 Fetching external data
-- 📥 Caching data
 - ⏳ Loading and error states
 - 🔄 Conditional rendering
 - 📱 Responsive CSS
 - 🧩 Component composition
 - 🗂️ Project organization
-- 🔐 Environment variables
 - ⚡ Vite development workflow
 - 🔍 ESLint and code quality
 - 🎨 Modern UI development
@@ -316,9 +268,6 @@ Building cinescope helped me strengthen my understanding of:
 ---
 
 ## 🎯 Project Goals
-
-CineScope was created as a practical React project to move beyond simple
-component exercises and work with a real external API.
 
 The primary goals were to practice:
 
@@ -331,7 +280,7 @@ State Management
   ↓
 Custom Hooks
   ↓
-API Integration
+Redux
   ↓
 Async Data
   ↓
@@ -347,15 +296,15 @@ complete, maintainable frontend application.
 
 ## 🚀 Deployment
 
-CineScope is deployed using Vercel.
+AERA is deployed using Vercel.
 
 ### Live Application
 
-https://cine-scope-blond-ten.vercel.app/
+https://aera-gamma.vercel.app/
 
 ### GitHub Repository
 
-https://github.com/Hassan-src/CineScope
+https://github.com/Hassan-src/AERA
 
 ---
 
@@ -366,7 +315,7 @@ Contributions, suggestions, and improvements are welcome.
 ### Fork the repository
 
 ```bash
-git clone https://github.com/Hassan-src/CineScope.git
+git clone https://github.com/Hassan-src/AERA.git
 ```
 
 ### Create a feature branch
@@ -394,12 +343,12 @@ Then open a Pull Request.
 
 ## 🐛 Issues & Suggestions
 
-If you find a bug or have a suggestion for improving Cinescope,
+If you find a bug or have a suggestion for improving AERA,
 feel free to open an issue on GitHub.
 
 **GitHub Repository:**
 
-https://github.com/Hassan-src/CineScope
+https://github.com/Hassan-src/AERA
 
 ---
 
@@ -407,11 +356,11 @@ https://github.com/Hassan-src/CineScope
 
 ### 🚀 Live Demo
 
-https://cine-scope-blond-ten.vercel.app/
+https://aera-gamma.vercel.app/
 
 ### 💻 Source Code
 
-https://github.com/Hassan-src/CineScope
+https://github.com/Hassan-src/AERA
 
 ### 🐙 GitHub
 
@@ -436,8 +385,8 @@ If you like this project, consider giving the repository a ⭐ on GitHub.
 
 <div align="center">
 
-### 🍿 CineScope
+### 🛋️ AERA
 
-**Your gateway to cinematic worlds.**
+**AERA — The Shape of Living.**
 
 Built with ❤️ using React.
