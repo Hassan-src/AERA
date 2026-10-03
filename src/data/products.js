@@ -50,7 +50,7 @@ import Tulip from "../assets/pics/TulipChair.avif";
 import TulipTransparent from "../assets/pics/TulipChairTransparent.avif";
 
 import Wingback from "../assets/pics/WingbackChair.avif";
-import WingbackTransparent from "../assets/pics/WingbackChairTransparent.avif";
+import WingbackTransparent from "../assets/pics/WingbackchairTransparent.avif";
 
 import MiloClub from "../assets/pics/MiloClubChair.avif";
 import MiloClubTransparent from "../assets/pics/MiloClubChairTransparent.avif";
